@@ -5,6 +5,7 @@ header {
 
 }
 
+
 #button {
     position: absolute;
     right: 3%;
@@ -71,6 +72,7 @@ header {
     animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    z-index: 4;
 }
 
 
@@ -83,6 +85,21 @@ header {
         animation-fill-mode: forwards;
     }
 
+    .content {
+        text-align: center;
+
+
+        border: 2px solid black;
+        border-radius: 20px 0px 20px 0px;
+
+        height: auto;
+        display: inline-block;
+        box-shadow: 0px;
+
+        transition: border-radius 1s, box-shadow 1s, border 1s;
+
+
+    }
 
 
     #logo {
@@ -94,6 +111,7 @@ header {
 
 
     }
+
 }
 
 @keyframes fadeInAnimation {
@@ -232,14 +250,21 @@ header {
 
 
 .home>hr {
-    margin-top: 10%;
+
+    margin-left: 10px;
     border-width: 12px;
     border-radius: 10px;
     width: 50%;
+    left:50%;
+
 }
 
 .home>h1 {
     text-align: center;
+    font-family: 'Courier Prime', monospace;
+
+    font-family: 'Pacifico', cursive;
+
 }
 
 
@@ -254,63 +279,551 @@ header {
     right: 5%;
 
 }
+
 .subheadings {
     padding-left: 1.5em;
-   
+
 }
-#newproducts{
-    background-color:black;
-    border-radius: 12px;
-    color:lightgreen;
-    box-shadow: 4px 3px 8px 1px;
-}
-#trending{
-    background-color:black;
-    border-radius: 12px;
-    color:palevioletred;
-    box-shadow: 4px 3px 8px 1px;
-   
-}
-#alsotrythis{
+
+#newproducts {
     background-color: black;
     border-radius: 12px;
-    color:yellow;
+    color: lightgreen;
     box-shadow: 4px 3px 8px 1px;
-    box-shadow: 4px 3px 8px 1px;
+    font-family: sofia;
 }
-#commingsoon{
+
+#trending {
+
+
     background-color: black;
     border-radius: 12px;
-    color:#005555;
+    font-family: 'Caveat Brush', cursive;
+    color: palevioletred;
     box-shadow: 4px 3px 8px 1px;
+
 }
-#icecream{
+
+#alsotrythis {
+
     background-color: black;
     border-radius: 12px;
-    color:pink;
+    color: rgb(9, 169, 209);
     box-shadow: 4px 3px 8px 1px;
+    box-shadow: 4px 3px 8px 1px;
+    font-family: 'Grand Hotel', cursive;
 }
-#kulfi{
+
+#commingsoon {
+    margin-top: 12px;
+    margin-bottom: 12px;
     background-color: black;
     border-radius: 12px;
-    color:white;
+    color: #005555;
     box-shadow: 4px 3px 8px 1px;
+    font-family: 'Oleo Script Swash Caps', cursive;
 }
-#shakes{
+
+#icecream {
     background-color: black;
     border-radius: 12px;
-    color:#E0D8B0;
+    color: pink;
     box-shadow: 4px 3px 8px 1px;
 }
-.content{
+
+#kulfi {
+    background-color: black;
+    border-radius: 12px;
+    color: white;
+    box-shadow: 4px 3px 8px 1px;
+}
+
+#shakes {
+    background-color: black;
+    border-radius: 12px;
+    color: #E0D8B0;
+    box-shadow: 4px 3px 8px 1px;
+}
+
+.content {
+
+    position: relative;
+    height: 500px;
+    width: 400px;
     text-align: center;
     font-style: bold;
-}
-#quote {
-    text-align: center;
-    margin-top:30px;
-    border:2px solid black;
-    border-radius:15px 0px 15px 0px;
-    padding:2em;
+    font-family: 'Cookie', cursive;
     
 }
+
+#quote {
+    text-align: center;
+    margin-top: 30px;
+    border: 2px solid black;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 150%;
+    background-size: 100% 100%;
+    background-image: url("https://images.unsplash.com/photo-1533134486753-c833f0ed4866?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    border-radius: 15px 0px 15px 0px;
+    padding: 1em;
+}
+
+.webelive {
+    font-size: 150%;
+
+}
+
+h2>i {
+    font-family: 'Pacifico', cursive;
+}
+
+.namepalate {
+
+    font-family: 'Great Vibes', cursive;
+}
+
+.badge {
+    font-family: sans-serif;
+
+}
+
+.content {
+    text-align: center;
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 20px 0px 20px 0px;
+    font-size: 150%;
+    display: inline-block;
+    box-shadow: 0px;
+
+    transition: border-radius 1s, box-shadow 1s, border 1s;
+
+
+}
+
+.content>button {
+    font-size: medium;
+    font-family: sans-serif;
+    width: 120px;
+
+}
+
+.content:hover {
+    box-shadow: 4px 3px 8px 1px;
+    border-radius: 50px;
+    border: 2px solid gray;
+
+}
+
+
+#anjeershake {
+    color: #A98691;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+
+#anjeershake1 {
+    color: #A98691;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+
+#gulkhanicecream {
+
+    color: #FF007F;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url('');
+}
+
+#rajbhogkulfi {
+    color: #EB7C05;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url('');
+}
+
+#mawakulfi {
+    color: #EADDCA;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url('');
+}
+
+#dryfruitkulfi {
+    color: #583827;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url('');
+}
+
+#vanillaicecream {
+    color: #F3E5AB;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url('');
+}
+
+#mangoicecream {
+    color: #F4BB44;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url('');
+}
+
+#badamshake {
+    color: #EFDecd;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url('');
+}
+
+#anjeershake {
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url('');
+}
+
+#lassi {
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url('');
+}
+
+#faludabasedrabdi {
+    color: #f8e1ba;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url('');
+}
+
+#fruitsalad {
+    color: #ec4d75;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url('');
+}
+
+#kajushake {
+    color: #d4b797;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url('');
+}
+
+#fruitfaluda {
+    color: #FAA0A0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url('');
+}
+
+#rabdimalai {
+    color: #cbd69e;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url('');
+}
+
+#americandryfruiticecream {
+    color: #84563c;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url('');
+}
+
+#butterscotch {
+    color: #f6e2b9;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url('');
+}
+
+#vanilla {
+    color: #F3E5AB;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url('');
+}
+
+#mango {
+    color: #F4BB44;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url('');
+}
+
+#chocolate {
+    color: #7B3F00;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url('');
+}
+
+#americandryfruit {
+    color: #5a3826;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url('');
+}
+
+#rajbhog {
+    color: #F4C430;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url('');
+}
+
+#blackcurrent {
+    color: #1B1811;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url('');
+}
+
+#honeyfig {
+    color: #EBA937;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url('');
+}
+
+#guava {
+    color: #f5c4b1;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url('');
+}
+
+#rasberry {
+    color: #E30B5C;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url('');
+}
+
+#blueberry {
+    color: #4F86F7;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url('');
+}
+
+#strawberry {
+    color: #fc5a8d;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url('');
+}
+
+#matkakulfi {
+    color: #d97557;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url('');
+}
+
+#kulfi {
+    color: #fffff0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url('');
+}
+
+#pistaslice {
+    color: #93C572;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url('');
+}
+
+#badampistaslice {
+    color: #b3d37f;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url('');
+}
+
+#mangoslice {
+    color: #F4BB44;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url('');
+}
+
+#anjeerslice {
+    color: #ad6881;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url('');
+}
+
+#rajbogslice {
+    color: #F4C430;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url('');
+}
+
+#badamshakes {
+    color: #F4C430;
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url('');
+}
+
+#kajushakes {
+    color: #d4b797;
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url('');
+}
+
+#anjeershakes {
+    color: #b47b90;
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url('');
+}
+
+#rabdis {
+    color: #e9f3c1;
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url('');
+}
+
+#lassis {
+    color: #ffffff;
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url('');
+}
+
+.contactuson {
+    font-family: sofia;
+    margin-top: 30px;
+    text-align: center;
+    color: #093ca8;
+}
+
+#email {
+    font-family: sofia;
+    margin-top: 30px;
+    text-align: center;
+    color: #3e65cf;
+}
+
+#insta {
+    font-family: sofia;
+    margin-top: 30px;
+    text-align: center;
+    color: #833AB4;
+}
+
+#fb {
+    font-family: sofia;
+    margin-top: 30px;
+    text-align: center;
+    color: #3b5998;
+}
+
+#twitter {
+    font-family: sofia;
+    margin-top: 30px;
+    text-align: center;
+    color: #00acee;
+}
+
+#youtube {
+    font-family: sofia;
+    margin-top: 30px;
+    text-align: center;
+    color: #FF0000;
+}
+
+#linkedin {
+    font-family: sofia;
+    margin-top: 30px;
+    text-align: center;
+    color: #0e76a8;
+}
+
+#aboutus>h2 {
+    text-align: center;
+    font-family: sofia;
+}
+
+#aboutus>div {
+    display: flex;
+    /* box-shadow: 4px 3px 8px 3px;  */
+}
+
+.newproductsdiv {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+#trendingdiv {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.alsotrythisdiv {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
+.commingsoondiv {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.allalignment {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#aboutus>h2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    box-shadow: 0px;
+    opacity: 0;
+    transition: 1s all ease;
+    
+  }
+  
+.reveal.active{ 
+    box-shadow: 4px 3px 8px 1px;
+    transform: translateY(0);
+    opacity: 1;
+   
+  }

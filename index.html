@@ -11,14 +11,48 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inspiration&family=Pacifico&family=Water+Brush&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Inspiration&family=Pacifico&family=Water+Brush&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cookie&family=Courier+Prime&family=Inspiration&family=Pacifico&family=Water+Brush&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Grand+Hotel&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
 </head>
 
-<body style="background-image:linear-gradient(to top,#FFEEEE,#FFF6EA,#F7E9D7,#EBD8C3);">
+<body>
 
 
     <header class="header">
 
-        <button id="button" class="navbuttons">Sign in</button>
+        <button id="button" class="navbuttons" onclick="window.location.href = 'signin.html';">Sign in</button>
 
 
         <img class="img-fluid" src="images\logo.png" id="logo">
@@ -27,375 +61,286 @@
     </header>
 
     <nav id="navbar">
-        <button class="navbuttons" onclick="window.location.href = 'https://ide.geeksforgeeks.org';">Home</button>
-        <button class="navbuttons">Search</button>
-        <button class="navbuttons">Products</button>
-        <button class="navbuttons">About us</button>
-        <button class="navbuttons">FAQ</button>
-        <button class="navbuttons">Contact us</button>
+        <button class="navbuttons" onclick="window.location.href = 'index.html';">Home</button>
+        <button class="navbuttons" onclick="window.location.href = '';">Search</button>
+        <button class="navbuttons" onclick="window.location.href = 'products.html';">Products</button>
+        <button class="navbuttons" onclick="window.location.href = 'about.html';">About us</button>
+        <button class="navbuttons" onclick="window.location.href = 'faq.html';">FAQ</button>
+        <button class="navbuttons" onclick="window.location.href = 'contact.html';">Contact us</button>
     </nav>
+
     <div class="home" id="homeid">
-        <div id="quote"> <h2><i>"We belive in consumer satisfaction"</i></h2>
-        <p><b>   - Mr. Zakir </b><br><em>(Founder and CEO of ZAK N MERC PVT.LTD)</em></p></div>
-       
+        <div id="quote">
+            <h2 class="font-effect-neon webelive"><i>"We belive in consumer's satisfaction"</i></h2>
+            <p><b>
+                    <div class="namepalate"> - Mr. Zakir </div>
+                </b><br><em>
+                    <div class="badge">(Founder of <b>ZAYSH Ice Cream</div></b><sup>TM</sup>)
+                </em></p>
+        </div>
+
         <hr id="homehr">
-        <h1>Home
-        </h1> 
-        <div id="newproducts">
+
+        <h1 class="display-1 text-center text-dark">Home
+        </h1>
+    </div>
+
+
+    <div id="newproducts">
+
+
+
+
+
         <h2 class="subheadings">
             New Products
         </h2>
-        </div>
+    </div>
 
 
 
-        <div id="anjeershake" class="content">
+
+
+    <div class="newproductsdiv">
+        <div id="anjeershake" class="content  reveal">
             <h3>Anjeer Shake</h3>
-            <div class="stockphoto"></div>
-            <div calss="discription"><h4>Discription:</h4>
-            <p>
-                Anjeer shake is a thick blend of fig and milk
-                along with dryfruits and ice.
-            </p>
-            </div>
+
+            <div calss="discription">
+                <p>
+                    Anjeer shake is a thick blend of fig and milk
+                    along with dryfruits and ice.
+                </p>
+
+            </div><button class="navbuttons anjeer_shake">Buy</button>
         </div>
-        <div id="gulkhanicecream" class="content">
+
+        <div id="gulkhanicecream" class="content  reveal">
             <h3>Rose (Gulkhan) IceCream</h3>
-            <div class="stockphoto"></div>
-            <div calss="discription"></div>
-        </div> <div id="rajbhogkulfi" class="content">
-            <h3>Rajbhog Kulfi</h3>
-            <div class="stockphoto"></div>
-            <div calss="discription"></div>
-        </div>
 
-
-
-
-
-
-
-
-
-
-
-
-        <div id="trending"><h2 class="subheadings">
-            Trending
-        </h2></div>
-
-
-        <div id="mawakulfi" class="content">
-            <h3>Mawa Kulfi</h3>
-            <div class="stockphoto"></div>
-            <div calss="discription"></div>
-        </div> 
-        <div id="dryfruitkulfi" class="content">
-            <h3>Dryfruit Kulfi</h3>
-            <div class="stockphoto"></div>
-            <div calss="discription"></div>
-        </div> 
-        
-        <div id="vanillaicecream" class="content">
-            <h3>Vanilla IceCream</h3>
-            <div class="stockphoto"></div>
-            <div calss="discription"></div>
-        </div> 
-        <div id="mangoicecream" class="content">
-            <h3>Mango IceCream</h3>
-            <div class="stockphoto"></div>
-            <div calss="discription"></div>
-        </div> 
-        <div id="badamshake" class="content">
-            <h3>Badam Shake</h3>
-            <div class="stockphoto"></div>
-            <div calss="discription"></div>
-        </div> 
-        <div id="anjeershake" class="content">
-            <h3>Anjeer Shake</h3>
-            <div class="stockphoto"></div>
-            <div calss="discription"></div>
-        </div> 
-        <div id="lassi" class="content">
-            <h3>Lassi</h3>
-            <div class="stockphoto"></div>
-            <div calss="discription"></div>
-        </div>
-
-        <div id="faludabasedrabdi" class="content">
-            <h3>Faluda Based Rabdi</h3>
-            <div class="stockphoto"></div>
-            <div calss="discription"></div>
-        </div>
-
-
-
-
-
-
-
-
-
-
-        <div id="alsotrythis"><h2 class="subheadings">
-            Also try this
-        </h2>
-    </div>
-    <div id="fruitsalad" class="content">
-        <h3>Fruit Salad IceCream</h3>
-        <div class="stockphoto"></div>
-        <div calss="discription"></div>
-    </div><div id="kaju shake" class="content">
-        <h3>Kaju Shake</h3>
-        <div class="stockphoto"></div>
-        <div calss="discription"></div>
-    </div><div id="fruitfaluda" class="content">
-        <h3>Fruit Faluda</h3>
-        <div class="stockphoto"></div>
-        <div calss="discription"></div>
-    </div>
-    <div id="rabdimalai" class="content">
-        <h3>Rabdi malai</h3>
-        <div class="stockphoto"></div>
-        <div calss="discription"></div>
-    </div>
-        <div id="commingsoon"><h2 class="subheadings">
-            Comming Soon
-        </h2></div>
-        <div id="americandryfruiticecream" class="content">
-            <h3>American Dryfruit Icecream</h3>
-            <div class="stockphoto"></div>
-            <div calss="discription"></div>
-        </div>
-        
-        
-        
-        
-
-
-
-    </div>
-    <div class="home" id="products">
-        <hr id="productshr">
-        <h1>Products
-            <div class="square-wrapper">
-                <div class="square square-transition"></div>
+            <div calss="discription">
+                <p>
+                    Rose (Gulkhan) IceCream is an icecream made of rose extracts (gulkhan) and milk.
+                </p>
             </div>
-        </h1>
+
+            <button class="navbuttons rose_icecream">Buy</button>
+
+        </div>
 
 
+        <div id="rajbhogkulfi" class="content  reveal">
+            <h3>Rajbhog Kulfi</h3>
 
-
-
-
-        <div id="icecream"><h2 class="subheadings">
-            IceCreams
-        </h2></div>
-
-
-        <div id="butterscotch" class="content">
-            <h3>Butterscotch IceCream</h3>
-            <div class="stockphoto"></div>
-            <div calss="discription"></div>
-        </div>
-
-        <div id="vanilla" class="content">
-            <h3>Vanilla Icecream</h3>
-            <div class="stockphoto"></div>
-            <div calss="discription"></div>
-        </div>
-        <div id="mango" class="content">
-            <h3>Mango IceCream</h3>
-            <div class="stockphoto"></div>
-            <div calss="discription"></div>
-        </div>
-        <div id="chocolate" class="content">
-            <h3>Chocolate IceCream</h3>
-            <div class="stockphoto"></div>
-            <div calss="discription"></div>
-        </div>
-        <div id="americandryfruit" class="content">
-            <h3>American Dryfruit Icecream</h3>
-            <div class="stockphoto"></div>
-            <div calss="discription"></div>
-        </div>
-        <div id="rajbhog" class="content">
-            <h3>Rajbhog IceCream</h3>
-            <div class="stockphoto"></div>
-            <div calss="discription"></div>
-        </div>
-        <div id="blackcurrent" class="content">
-            <h3>Dark Current IceCream</h3>
-            <div class="stockphoto"></div>
-            <div calss="discription"></div>
-        </div>
-        <div id="honeyfig" class="content">
-            <h3>Honeyfig IceCream</h3>
-            <div class="stockphoto"></div>
-            <div calss="discription"></div>
-        </div>
-        <div id="guava" class="content">
-            <h3>Guava</h3>
-            <div class="stockphoto"></div>
-            <div calss="discription"></div>
-        </div>
-        <div id="rasberry" class="content">
-            <h3>Rasberry IceCream</h3>
-            <div class="stockphoto"></div>
-            <div calss="discription"></div>
-        </div>
-        <div id="blueberry" class="content">
-            <h3>Blueberry IceCream</h3>
-            <div class="stockphoto"></div>
-            <div calss="discription"></div>
-        </div>
-        <div id="strawberry" class="content">
-            <h3>strawberry IceCream</h3>
-            <div class="stockphoto"></div>
-            <div calss="discription"></div>
+            <div class="discription">
+                <p>
+                    Rajbhog kulfi is a safron flavoured kulfi coated with nuts and chocolate.
+                </p>
+            </div>
+            <button class="navbuttons rajbhog_kulfi">Buy</button>
         </div>
 
 
 
 
 
+    </div>
 
 
 
 
 
-   
 
-        <div id="matkakulfi" class="content">
-            <h3>Matka Kulfi</h3>
-            <div class="stockphoto"></div>
-            <div calss="discription"></div>
+
+
+
+
+
+    <div id="trending">
+        <h2 class="subheadings">
+            #Trending
+        </h2>
+    </div>
+
+
+    <div id="trendingdiv">
+
+
+        
+            <div id="mawakulfi" class="content  reveal">
+                <h3>Mawa Kulfi</h3>
+
+                <div calss="discription">
+                    <p>
+                        Mawa kulfi is made up of dried evaporated milk solids and milk.
+                    </p>
+                </div>
+                <button class="navbuttons mawa_kulfi">Buy</button>
+            </div>
+            <div id="dryfruitkulfi" class="content  reveal ">
+                <h3>Dryfruit Kulfi</h3>
+
+                <div calss="discription">
+                    <p>
+                        Dryfruit Kulfi is made up of dried evaporated milk solids and coated with dryfruits.
+                    </p>
+                </div>
+                <button class="navbuttons dryfruit_kulfi">Buy</button>
+            </div>
+
+            <div id="vanillaicecream" class="content  reveal ">
+                <h3>Vanilla IceCream</h3>
+
+                <div calss="discription">
+                    <p>
+                        Made with milk and vanilla flavour.
+                    </p>
+                </div>
+                <button class="navbuttons vanilla_icecream">Buy</button>
+            </div>
+
+
+            <div id="mangoicecream" class="content  reveal">
+                <h3>Mango IceCream</h3>
+
+                <div calss="discription">
+                    <p>
+                        Mango IceCream is made with mango extracts and milk.
+                    </p>
+                </div>
+                <button class="navbuttons mango_icecream">Buy</button>
+            </div>
+            <div id="badamshake" class="content  reveal">
+                <h3>Badam Shake</h3>
+
+                <div calss="discription">
+                    <p>
+                        Badam(almond) Shake is made up of real almond and milk milk.
+                    </p>
+                </div>
+                <button class="navbuttons badam_shake">Buy</button>
+            </div>
+            <div id="anjeershake1" class="content  reveal">
+                <h3>Anjeer Shake</h3>
+
+                <div calss="discription">
+                    <p>
+                        Anjeer shake is a thick blend of fig and milk
+                        along with dryfruits and ice.
+                    </p>
+                </div>
+                <button class="navbuttons anjeer_shake">Buy</button>
+            </div>
+
+
+            <div id="lassi" class="content  reveal">
+                <h3>Lassi</h3>
+
+                <div calss="discription">
+                    <p>
+                        Made up of sugar and curd.
+                    </p>
+                </div>
+                <button class="navbuttons lassi_">Buy</button>
+            </div>
+
+            <div id="faludabasedrabdi" class="content  reveal">
+                <h3>Faluda Based Rabdi</h3>
+
+                <div calss="discription">
+                    <p>
+                        Made with falooda and icecream with milk solids.
+                    </p>
+                </div>
+                <button class="navbuttons kulfi_base_rabdi">Buy</button>
+            </div>
+
+        
+
+    </div>
+
+
+
+
+
+
+
+    <div id="alsotrythis">
+        <h2 class="subheadings">
+            Try it!
+        </h2>
+    </div>
+    <div class="alsotrythisdiv">
+        <div id="fruitsalad" class="content  reveal">
+            <h3>Fruit Salad IceCream</h3>
+
+            <div calss="discription">
+                <p>
+                    Fruit salad Icecream is made with real mix-fruit chunks and milk.
+                </p>
+            </div>
+            <button class="navbuttons fruit_salad_icecream">Buy</button>
         </div>
-        <div id="kulfi"><h2 class="subheadings">
-            Kulfi:
-        </h2></div>
-           
-        <div id="pistaslice" class="content">
-            <h3>Pista Slice Kulfi</h3>
-            <div class="stockphoto"></div>
-            <div calss="discription"></div>
-        </div>
-        <div id="badampistaslice" class="content">
-            <h3>Badam Pista Slice kulfi</h3>
-            <div class="stockphoto"></div>
-            <div calss="discription"></div>
-        </div>
-        <div id="mangoslice" class="content">
-            <h3>Mango Slice kulfi</h3>
-            <div class="stockphoto"></div>
-            <div calss="discription"></div>
-        </div>
-        <div id="anjeerslice" class="content">
-            <h3>Anjeer Slice Kulfi</h3>
-            <div class="stockphoto"></div>
-            <div calss="discription"></div>
-        </div>
-        <div id="rajbogslice" class="content">
-            <h3>Rajbhog Slice Kulfi</h3>
-            <div class="stockphoto"></div>
-            <div calss="discription"></div>
-        </div>
-
-
-
-
-
-
-
-
-
-        <div id="shakes"><h2 class="subheadings">
-            Shakes
-        </h2></div>
-        <div id="badamshakes" class="content">
-            <h3>Badam Shake</h3>
-            <div class="stockphoto"></div>
-            <div calss="discription"></div>
-        </div>
-        <div id="kajushakes" class="content">
+        <div id="kajushake" class="content  reveal">
             <h3>Kaju Shake</h3>
-            <div class="stockphoto"></div>
-            <div calss="discription"></div>
-        </div>
-        <div id="anjeershakes" class="content">
-            <h3>Anjeer Shake</h3>
-            <div class="stockphoto"></div>
-            <div calss="discription"></div>
-        </div>
-        <div id="rabdis" class="content">
-            <h3>Rabdi</h3>
-            <div class="stockphoto"></div>
-            <div calss="discription"></div>
-        </div>
-        <div id="lassis" class="content">
-            <h3>Lassi</h3>
-            <div class="stockphoto"></div>
-            <div calss="discription"></div>
-        </div>
 
+            <div calss="discription">
+                <p>
+                    Made with real cashew nuts and milk.
+                </p>
+            </div>
+            <button class="navbuttons kaju_shake">Buy</button>
+        </div>
+        <div id="fruitfaluda" class="content  reveal">
+            <h3>Fruit Faluda</h3>
 
+            <div calss="discription">
+                <p>
+                    Falooda made with real fruit chunks and icecream.
+                </p>
+            </div>
+            <button class="navbuttons fruit_faluda">Buy</button>
+        </div>
+        <div id="rabdimalai" class="content  reveal">
+            <h3>Rabdi malai</h3>
 
-        
+            <div calss="discription">
+                <p>
+                    Made with evaporated milk solids and icecream with some milk.
+                </p>
+            </div>
+            <button class="navbuttons rabdi_malai">Buy</button>
+        </div>
+    </div>
+    <div id="commingsoon">
+        <h2 class="subheadings">
+            Comming Soon
+        </h2>
+    </div>
+    <div class="commingsoondiv">
+        <div id="americandryfruiticecream" class="content  reveal">
+            <h3>American Dryfruit Icecream</h3>
 
-        
-        
-        
-       
+            <div calss="discription">
+                <p>
+                    Made with condensed milk chocolate and cashew nuts.
+                </p>
+            </div>
+            <button class="navbuttons dryfruit_icecream">Buy</button>
+        </div>
 
     </div>
-    <div class="home" id="aboutus">
-        <hr id="aboutushr">
-        <h1>About us
 
-        </h1>
-        <h2 class="subheadings">
-           Who are we?
-        </h2>
-        <h2 class="subheadings">
-            Our history:
-        </h2>
-        <h2 class="subheadings">
-            Why people buy from us?
-        </h2>
-        <h2 class="subheadings">
-            What we provide?
-        </h2>
-        <h2 class="subheadings">
-            Our selling point:
-        </h2>
-        <h2 class="subheadings">
-            Company's vision:
-        </h2>
+
+
 
 
     </div>
-    <div class="home" id="faq">
-        <hr id="faqhr">
-        <h1>FAQ
-
-        </h1>
-        <h2 class="subheadings">
-            Asked by people:
-        </h2>
-        <h2 class="subheadings">
-            Asked by shopkeepers:
-        </h2>
-        <h2 class="subheadings">
-            Asked by Distributers:
-        </h2>
-    </div>
-    <div class="home" id="contactus">
-        <hr id="contactushr">
-        <h1>Contact us
-        </h1>
 
 
-    </div>
+
+
+
+
 
 
 
