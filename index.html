@@ -44,8 +44,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-
-</head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
 
 <body>
 
@@ -59,7 +59,7 @@
 
 
     </header>
-
+    
     <nav id="navbar">
         <button class="navbuttons" onclick="window.location.href = 'index.html';">Home</button>
         <button class="navbuttons" onclick="window.location.href = '';">Search</button>
@@ -68,7 +68,9 @@
         <button class="navbuttons" onclick="window.location.href = 'faq.html';">FAQ</button>
         <button class="navbuttons" onclick="window.location.href = 'contact.html';">Contact us</button>
     </nav>
-
+    <button  onclick="window.location.href = 'cart.html';" id="myBtn"><span class="material-symbols-outlined">
+        shopping_cart
+        </span ><div class="cart_txt">Cart</div> </button>
     <div class="home" id="homeid">
         <div id="quote">
             <h2 class="font-effect-neon webelive"><i>"We belive in consumer's satisfaction"</i></h2>
@@ -111,7 +113,7 @@
                     along with dryfruits and ice.
                 </p>
 
-            </div><button class="navbuttons anjeer_shake">Buy</button>
+            </div><button class="navbuttons anjeer_shake">Add to cart</button>
         </div>
 
         <div id="gulkhanicecream" class="content  reveal">
@@ -123,7 +125,7 @@
                 </p>
             </div>
 
-            <button class="navbuttons rose_icecream">Buy</button>
+            <button class="navbuttons rose_icecream">Add to cart</button>
 
         </div>
 
@@ -136,7 +138,7 @@
                     Rajbhog kulfi is a safron flavoured kulfi coated with nuts and chocolate.
                 </p>
             </div>
-            <button class="navbuttons rajbhog_kulfi">Buy</button>
+            <button class="navbuttons rajbhog_kulfi">Add to cart</button>
         </div>
 
 
@@ -174,7 +176,7 @@
                         Mawa kulfi is made up of dried evaporated milk solids and milk.
                     </p>
                 </div>
-                <button class="navbuttons mawa_kulfi">Buy</button>
+                <button class="navbuttons mawa_kulfi">Add to cart</button>
             </div>
             <div id="dryfruitkulfi" class="content  reveal ">
                 <h3>Dryfruit Kulfi</h3>
@@ -184,7 +186,7 @@
                         Dryfruit Kulfi is made up of dried evaporated milk solids and coated with dryfruits.
                     </p>
                 </div>
-                <button class="navbuttons dryfruit_kulfi">Buy</button>
+                <button class="navbuttons dryfruit_kulfi">Add to cart</button>
             </div>
 
             <div id="vanillaicecream" class="content  reveal ">
@@ -195,7 +197,7 @@
                         Made with milk and vanilla flavour.
                     </p>
                 </div>
-                <button class="navbuttons vanilla_icecream">Buy</button>
+                <button class="navbuttons vanilla_icecream">Add to cart</button>
             </div>
 
 
@@ -207,7 +209,7 @@
                         Mango IceCream is made with mango extracts and milk.
                     </p>
                 </div>
-                <button class="navbuttons mango_icecream">Buy</button>
+                <button class="navbuttons mango_icecream">Add to cart</button>
             </div>
             <div id="badamshake" class="content  reveal">
                 <h3>Badam Shake</h3>
@@ -217,7 +219,7 @@
                         Badam(almond) Shake is made up of real almond and milk milk.
                     </p>
                 </div>
-                <button class="navbuttons badam_shake">Buy</button>
+                <button class="navbuttons badam_shake">Add to cart</button>
             </div>
             <div id="anjeershake1" class="content  reveal">
                 <h3>Anjeer Shake</h3>
@@ -228,7 +230,7 @@
                         along with dryfruits and ice.
                     </p>
                 </div>
-                <button class="navbuttons anjeer_shake">Buy</button>
+                <button class="navbuttons anjeer_shake">Add to cart</button>
             </div>
 
 
@@ -240,7 +242,7 @@
                         Made up of sugar and curd.
                     </p>
                 </div>
-                <button class="navbuttons lassi_">Buy</button>
+                <button class="navbuttons lassi_">Add to cart</button>
             </div>
 
             <div id="faludabasedrabdi" class="content  reveal">
@@ -251,7 +253,7 @@
                         Made with falooda and icecream with milk solids.
                     </p>
                 </div>
-                <button class="navbuttons kulfi_base_rabdi">Buy</button>
+                <button class="navbuttons kulfi_base_rabdi">Add to cart</button>
             </div>
 
         
@@ -278,7 +280,7 @@
                     Fruit salad Icecream is made with real mix-fruit chunks and milk.
                 </p>
             </div>
-            <button class="navbuttons fruit_salad_icecream">Buy</button>
+            <button class="navbuttons fruit_salad_icecream">Add to cart</button>
         </div>
         <div id="kajushake" class="content  reveal">
             <h3>Kaju Shake</h3>
@@ -288,7 +290,7 @@
                     Made with real cashew nuts and milk.
                 </p>
             </div>
-            <button class="navbuttons kaju_shake">Buy</button>
+            <button class="navbuttons kaju_shake">Add to cart</button>
         </div>
         <div id="fruitfaluda" class="content  reveal">
             <h3>Fruit Faluda</h3>
@@ -298,7 +300,7 @@
                     Falooda made with real fruit chunks and icecream.
                 </p>
             </div>
-            <button class="navbuttons fruit_faluda">Buy</button>
+            <button class="navbuttons fruit_faluda">Add to cart</button>
         </div>
         <div id="rabdimalai" class="content  reveal">
             <h3>Rabdi malai</h3>
@@ -308,7 +310,7 @@
                     Made with evaporated milk solids and icecream with some milk.
                 </p>
             </div>
-            <button class="navbuttons rabdi_malai">Buy</button>
+            <button class="navbuttons rabdi_malai">Add to cart</button>
         </div>
     </div>
     <div id="commingsoon">
@@ -325,7 +327,7 @@
                     Made with condensed milk chocolate and cashew nuts.
                 </p>
             </div>
-            <button class="navbuttons dryfruit_icecream">Buy</button>
+            <button class="navbuttons dryfruit_icecream">Add to cart</button>
         </div>
 
     </div>

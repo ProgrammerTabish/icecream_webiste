@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+
 header {
 
     position: relative;
@@ -183,7 +185,8 @@ header {
     transition: background-color 0.2s,
         border-color 0.2s,
         border-radius 0.2s;
-    font-weight: bold;
+    font-weight: bolder;
+    font-family: 'Sofia', cursive;
 }
 
 
@@ -406,6 +409,9 @@ h2>i {
     font-size: medium;
     font-family: sans-serif;
     width: 120px;
+    margin-top: 290px;
+    font-family: 'Sofia', cursive;
+    
 
 }
 
@@ -726,6 +732,7 @@ h2>i {
     margin-top: 30px;
     text-align: center;
     color: #3e65cf;
+    margin-bottom:180px;
 }
 
 #insta {
@@ -893,3 +900,21 @@ input[type=text] {
     border-radius:14px;
     box-shadow: 4px 3px 8px 1px;
   }
+  #myBtn {
+    
+    position: fixed; /* Fixed/sticky position */
+    bottom: 10px; /* Place the button at the bottom of the page */
+    right: 20px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: grey;
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+ .cart_txt{
+    font-family: 'Sofia', cursive;
+ }
