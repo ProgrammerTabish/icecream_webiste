@@ -40,7 +40,7 @@
    
 </head>
 
-<body>
+<body  id="page">
 
     <!-- <header class="header">
 
@@ -54,7 +54,7 @@
 
     <nav id="navbar">
         <button class="navbuttons" onclick="window.location.href = 'index.html';">Home</button>
-        <button class="navbuttons" onclick="window.location.href = '';">Search</button>
+        <button class="navbuttons" onclick="erasenavelements()">Search</button>
         <button class="navbuttons" onclick="window.location.href = 'products.html';">Products</button>
         <button class="navbuttons" onclick="window.location.href = 'about.html';">About us</button>
         <button class="navbuttons" onclick="window.location.href = 'faq.html';">FAQ</button>
@@ -99,7 +99,11 @@
                         IceCream made up of perfect combination of butter caramel and milk
                     </p>
                 </div>
-                <button class="navbuttons butterscotch_icecream">Add to cart</button>
+                
+                <div class="rates">100₹ for 750ml.</div>
+                
+<button class="navbuttons butterscotch_icecream" onClick=add_to_cart(event.target.parentElement)>Add to cart</button>
+  <div class="reviews">⭐⭐⭐⭐4.0</div>
             </div>
 
             <div id="vanilla" class="content  reveal">
@@ -108,7 +112,10 @@
                 <div calss="discription">
                     <p>Made with milk and vanilla flavour.</p>
                 </div>
-                <button class="navbuttons vanilla_icecream">Add to cart</button>
+                
+                <div class="rates">100₹ for 750ml.</div>
+<button class="navbuttons vanilla_icecream" onClick=add_to_cart(event.target.parentElement)>Add to cart</button>
+  <div class="reviews">⭐⭐⭐⭐4.0</div>
             </div>
             <div id="mango" class="content  reveal">
                 <h3>Mango IceCream</h3>
@@ -118,7 +125,10 @@
                         Mango IceCream is made with mango extracts and milk.
                     </p>
                 </div>
-                <button class="navbuttons mango_icecream">Add to cart</button>
+                
+                <div class="rates">100₹ for 750ml.</div>
+<button class="navbuttons mango_icecream" onClick=add_to_cart(event.target.parentElement)>Add to cart</button>
+  <div class="reviews">⭐⭐⭐⭐4.0</div>
             </div>
             <div id="chocolate" class="content  reveal">
                 <h3>Chocolate IceCream</h3>
@@ -126,7 +136,10 @@
                 <div calss="discription">
                     <p>Made with chocolate and milk</p>
                 </div>
-                <button class="navbuttons chocolate_icecream">Add to cart</button>
+                
+                <div class="rates">100₹ for 750ml.</div>
+<button class="navbuttons chocolate_icecream" onClick=add_to_cart(event.target.parentElement)>Add to cart</button>
+  <div class="reviews">⭐⭐⭐⭐4.0</div>
             </div>
             <div id="americandryfruit" class="content  reveal">
                 <h3>American Dryfruit Icecream</h3>
@@ -136,7 +149,10 @@
                         Made with condensed milk chocolate and dryfruits.
                     </p>
                 </div>
-                <button class="navbuttons american_dryfruit_icecream">Add to cart</button>
+                
+                <div class="rates">100₹ for 750ml.</div>
+<button class="navbuttons american_dryfruit_icecream" onClick=add_to_cart(event.target.parentElement)>Add to cart</button>
+  <div class="reviews">⭐⭐⭐⭐4.0</div>
             </div>
             <div id="rajbhog" class="content  reveal">
                 <h3>Rajbhog IceCream</h3>
@@ -146,7 +162,10 @@
                         Rajbhog IceCream is a safron flavoured icecream coated with nuts and chocolate.
                     </p>
                 </div>
-                <button class="navbuttons rajbhog_icecream">Add to cart</button>
+                
+                <div class="rates">100₹ for 750ml.</div>
+<button class="navbuttons rajbhog_icecream" onClick=add_to_cart(event.target.parentElement)>Add to cart</button>
+  <div class="reviews">⭐⭐⭐⭐4.0</div>
             </div>
             <div id="blackcurrent" class="content  reveal">
                 <h3>Dark Current IceCream</h3>
@@ -156,7 +175,10 @@
                         DarkCurrent IceCream is made up of Dark chocolate and milk.
                     </p>
                 </div>
-                <button class="navbuttons black_current">Add to cart</button>
+              
+                <div class="rates">100₹ for 750ml.</div>
+  <button class="navbuttons black_current" onClick=add_to_cart(event.target.parentElement)>Add to cart</button>
+  <div class="reviews">⭐⭐⭐⭐4.0</div>
             </div>
             <div id="honeyfig" class="content  reveal">
                 <h3>Honeyfig IceCream</h3>
@@ -166,7 +188,10 @@
                         IceCream made up of natural blend of milk an real dried fig.
                     </p>
                 </div>
-                <button class="navbuttons honey_fig">Add to cart</button>
+                
+                <div class="rates">100₹ for 750ml.</div>
+<button class="navbuttons honey_fig" onClick=add_to_cart(event.target.parentElement)>Add to cart</button>
+  <div class="reviews">⭐⭐⭐⭐4.0</div>
             </div>
             <div id="guava" class="content  reveal">
                 <h3>Guava IceCream</h3>
@@ -176,7 +201,10 @@
                         Made with Guava extracts and milk solids.
                     </p>
                 </div>
-                <button class="navbuttons guava_icecream">Add to cart</button>
+                
+                <div class="rates">100₹ for 750ml.</div>
+<button class="navbuttons guava_icecream" onClick=add_to_cart(event.target.parentElement)>Add to cart</button>
+  <div class="reviews">⭐⭐⭐⭐4.0</div>
             </div>
             <div id="rasberry" class="content  reveal">
                 <h3>Rasberry IceCream</h3>
@@ -186,7 +214,10 @@
                         Made with Rasberry extracts and milk.
                     </p>
                 </div>
-                <button class="navbuttons rasberry_icecream">Add to cart</button>
+               
+                <div class="rates">100₹ for 750ml.</div>
+ <button class="navbuttons rasberry_icecream" onClick=add_to_cart(event.target.parentElement)>Add to cart</button>
+  <div class="reviews">⭐⭐⭐⭐4.0</div>
             </div>
             <div id="blueberry" class="content  reveal">
                 <h3>Blueberry IceCream</h3>
@@ -196,7 +227,10 @@
                         Made with blueberry extracts and milk.
                     </p>
                 </div>
-                <button class="navbuttons blueberry_icecream">Add to cart</button>
+                
+                <div class="rates">100₹ for 750ml.</div>
+<button class="navbuttons blueberry_icecream" onClick=add_to_cart(event.target.parentElement)>Add to cart</button>
+  <div class="reviews">⭐⭐⭐⭐4.0</div>
             </div>
             <div id="strawberry" class="content  reveal">
                 <h3>Strawberry IceCream</h3>
@@ -206,7 +240,10 @@
                         Made with strawberry extracts and milk.
                     </p>
                 </div>
-                <button class="navbuttons">Add to cart</button>
+               
+                <div class="rates">100₹ for 750ml.</div>
+ <button class="navbuttons" onClick=add_to_cart(event.target.parentElement)>Add to cart</button>
+  <div class="reviews">⭐⭐⭐⭐4.0</div>
             </div>
 
 
@@ -228,7 +265,10 @@
                         Made up of pure and natural milk solids and milk.
                     </p>
                 </div>
-                <button class="navbuttons matka_kulfi">Add to cart</button>
+               
+                <div class="rates">100₹ for 750ml.</div>
+ <button class="navbuttons matka_kulfi" onClick=add_to_cart(event.target.parentElement)>Add to cart</button>
+  <div class="reviews">⭐⭐⭐⭐4.0</div>
             </div>
 
 
@@ -255,7 +295,10 @@
                         Made up of pure and natural milk solids, pista and milk.
                     </p>
                 </div>
-                <button class="navbuttons pista_slice_kulfi">Add to cart</button>
+               
+                <div class="rates">100₹ for 750ml.</div>
+ <button class="navbuttons pista_slice_kulfi" onClick=add_to_cart(event.target.parentElement)>Add to cart</button>
+  <div class="reviews">⭐⭐⭐⭐4.0</div>
             </div>
             <div id="badampistaslice" class="content  reveal">
                 <h3>Badam Pista Slice kulfi</h3>
@@ -265,7 +308,10 @@
                         Made up of pure and natural milk solids, pista, almond and milk.
                     </p>
                 </div>
-                <button class="navbuttons badam_pista_slice_kulfi">Add to cart</button>
+                
+                <div class="rates">100₹ for 750ml.</div>
+<button class="navbuttons badam_pista_slice_kulfi" onClick=add_to_cart(event.target.parentElement)>Add to cart</button>
+  <div class="reviews">⭐⭐⭐⭐4.0</div>
             </div>
             <div id="mangoslice" class="content  reveal">
                 <h3>Mango Slice kulfi</h3>
@@ -275,7 +321,10 @@
                         Mango slice kulfi is made with mango extracts and condensed milk solids.
                     </p>
                 </div>
-                <button class="navbuttons mango_slice_kulfi">Add to cart</button>
+              
+                <div class="rates">100₹ for 750ml.</div>
+  <button class="navbuttons mango_slice_kulfi" onClick=add_to_cart(event.target.parentElement)>Add to cart</button>
+  <div class="reviews">⭐⭐⭐⭐4.0</div>
             </div>
             <div id="anjeerslice" class="content  reveal">
                 <h3>Anjeer Slice Kulfi</h3>
@@ -286,7 +335,10 @@
                         along with dryfruits and ice.
                     </p>
                 </div>
-                <button class="navbuttons anjeer_slice_kulfi">Add to cart</button>
+             
+                <div class="rates">100₹ for 750ml.</div>
+   <button class="navbuttons anjeer_slice_kulfi" onClick=add_to_cart(event.target.parentElement)>Add to cart</button>
+  <div class="reviews">⭐⭐⭐⭐4.0</div>
             </div>
             <div id="rajbogslice" class="content  reveal">
                 <h3>Rajbhog Slice Kulfi</h3>
@@ -296,7 +348,10 @@
                         Rajbhog kulfi is a safron flavoured kulfi coated with nuts and chocolate.
                     </p>
                 </div>
-                <button class="navbuttons rajbhog_slice_kulfi">Add to cart</button>
+                
+                <div class="rates">100₹ for 750ml.</div>
+<button class="navbuttons rajbhog_slice_kulfi" onClick=add_to_cart(event.target.parentElement)>Add to cart</button>
+  <div class="reviews">⭐⭐⭐⭐4.0</div>
             </div>
 
 
@@ -320,7 +375,10 @@
 
                     </p>
                 </div>
-                <button class="navbuttons badam_shake">Add to cart</button>
+                
+                <div class="rates">100₹ for 750ml.</div>
+<button class="navbuttons badam_shake" onClick=add_to_cart(event.target.parentElement)>Add to cart</button>
+  <div class="reviews">⭐⭐⭐⭐4.0</div>
             </div>
             <div id="kajushakes" class="content  reveal">
                 <h3>Kaju Shake</h3>
@@ -330,7 +388,10 @@
                         kaju Shake is made up of real cashew and milk milk.
                     </p>
                 </div>
-                <button class="navbuttons kaju_shake">Add to cart</button>
+               
+                <div class="rates">100₹ for 750ml.</div>
+ <button class="navbuttons kaju_shake" onClick=add_to_cart(event.target.parentElement)>Add to cart</button>
+  <div class="reviews">⭐⭐⭐⭐4.0</div>
             </div>
             <div id="anjeershakes" class="content  reveal">
                 <h3>Anjeer Shake</h3>
@@ -341,7 +402,10 @@
                         along with dryfruits and ice.
                     </p>
                 </div>
-                <button class="navbuttons anjeer_shake">Add to cart</button>
+               
+                <div class="rates">100₹ for 750ml.</div>
+ <button class="navbuttons anjeer_shake" onClick=add_to_cart(event.target.parentElement)>Add to cart</button>
+  <div class="reviews">⭐⭐⭐⭐4.0</div>
             </div>
             <div id="rabdis" class="content  reveal">
                 <h3>Rabdi</h3>
@@ -351,7 +415,10 @@
                         Rabdi is made evapurated milk solids(mawa) and pure milk.
                     </p>
                 </div>
-                <button class="navbuttons rabdi_malai">Add to cart</button>
+                
+                <div class="rates">100₹ for 750ml.</div>
+<button class="navbuttons rabdi_malai" onClick=add_to_cart(event.target.parentElement)>Add to cart</button>
+  <div class="reviews">⭐⭐⭐⭐4.0</div>
             </div>
             <div id="lassis" class="content  reveal">
                 <h3>Lassi</h3>
@@ -361,7 +428,10 @@
                         Made with sugar and curd.
                     </p>
                 </div>
-                <button class="navbuttons lassi_">Add to cart</button>
+             
+                <div class="rates">100₹ for 750ml.</div>
+   <button class="navbuttons lassi_" onClick=add_to_cart(event.target.parentElement)>Add to cart</button>
+  <div class="reviews">⭐⭐⭐⭐4.0</div>
             </div>
 
 
