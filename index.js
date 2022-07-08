@@ -207,25 +207,24 @@ function search() {
 function reply_click(clicked_id) {
     console.log(clicked_id);
 }
+let login = false;
+function sign1() {
+    //     if (login == true) {
+    //         alert("hi");
+    //         window.location.href = "cart.php";
+    //     }
+    //     else {
+    //         window.location.href = "signin.php";
+    //     }
+
+    console.log("hi");
+}
 
 let cart_element
 let cart_arr = [];
-let login = false;
-function login() {
-    login = true;
-
-}
 
 
-function isloged() {
-    if (login == true) {
-        alert("hi");
-        window.location.href = "cart.php";
-    }
-    else {
-        window.location.href = "signin.php";
-    }
-}
+
 
 function add_to_cart(cart_element) {
     if (login == true) {

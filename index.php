@@ -12,8 +12,9 @@
 
     <?php include 'header.php';
     include'navbar.php'?>
-    
-    <button  onclick="isloged()" id="myBtn"><span class="material-symbols-outlined">
+  
+    <button  id="myBtn" onClick = login()>
+    <span class="material-symbols-outlined">
             shopping_cart
         </span>
         <div class="cart_txt">Cart</div>
@@ -342,24 +343,6 @@
     </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <script src="index.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -376,24 +359,15 @@
 
 </html>
 <?php
-function fetch_name($email)
-{
 
-}
-try {
+ if (isset($_SESSION['email'])) {
     $email=$_SESSION["email"];
-    echo '<script type="text/javascript">
-   signed_in();
-    </script>';
-   $name = fetch_name($email);
+    
+  
    echo $email;
-
    
 
 }
 
-catch (Exception $e)
-{
-echo $e;
-}
+
 ?>

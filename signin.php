@@ -32,7 +32,7 @@
 session_start();
 
 
-        try {
+         if (isset($_SESSION['error_name'])||isset($_SESSION['error_email'])||isset($_SESSION['error_tnc'])) {
   echo $_SESSION["error_name"];
   echo "<br>";
 echo $_SESSION["error_email"];
@@ -41,10 +41,7 @@ echo $_SESSION["error_email"];
  
 }
 
-//catch exception
-catch(Exception $e) {
- 
-}
+
 $_SESSION["error_tnc"]="";
       $_SESSION["error_email"]="";  
         $_SESSION["error_name"]="";
