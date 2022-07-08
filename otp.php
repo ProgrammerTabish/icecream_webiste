@@ -19,11 +19,24 @@
           OTP
            
        </h1>
-       <div class="signin"><img src="https://media1.giphy.com/media/6wcBC9tsubD5jrDL6g/200.webp?cid=ecf05e47ew9gy4h0vfw7fqalpne3i4cyzqzoev20giggg5na&rid=200.webp&ct=g">
+       <div class="signin"><img src="vecotors/email.gif">
+       
+</div>
+ <div class="signin" style="color:red;"><i><?php 
+ session_start();
+ try{
+    echo $_SESSION["error_otp"];
+    $_SESSION["error_otp"]="";
+ }
+ catch(Exception){
+
+ }
+ ?></i>
+       
 </div>
        <div class="signin" id="signinid">
         
-        <form name="signinform" action="otp.php" method="POST">
+        <form name="signinform" action="validate.php" method="POST">
             <label for="otp">An OTP was sent to your email by business@zayshicecream.com</label><br>
             <input type="text" id="otp" name="otp" placeholder="Enter the OTP" minlength="6" maxlength="6" required><br><br>
             

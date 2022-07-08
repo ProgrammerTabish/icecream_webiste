@@ -1,8 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <?php include 'metadata.php'?>
+    <?php include 'metadata.php';
+    session_start();?>
 </head>
 
 <body id="page">
@@ -11,7 +13,7 @@
     <?php include 'header.php';
     include'navbar.php'?>
     
-    <button onclick="window.location.href = 'cart.html';" id="myBtn"><span class="material-symbols-outlined">
+    <button  onclick="isloged()" id="myBtn"><span class="material-symbols-outlined">
             shopping_cart
         </span>
         <div class="cart_txt">Cart</div>
@@ -358,7 +360,7 @@
 
 
 
-    <script src="index.js"> </script>
+    <script src="index.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -373,3 +375,25 @@
 
 
 </html>
+<?php
+function fetch_name($email)
+{
+
+}
+try {
+    $email=$_SESSION["email"];
+    echo '<script type="text/javascript">
+   signed_in();
+    </script>';
+   $name = fetch_name($email);
+   echo $email;
+
+   
+
+}
+
+catch (Exception $e)
+{
+echo $e;
+}
+?>

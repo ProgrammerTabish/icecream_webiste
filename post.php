@@ -109,7 +109,10 @@ $query="UPDATE $table_name SET `otp` = 1 WHERE `email` = '$email';";
 mysqli_query($conn,$query);
 }
 
-
+function close_conn($conn)
+{
+  mysqli_close($conn);
+}
 
 
 
@@ -142,18 +145,21 @@ if($conn!=false)
    echo"
     //redirect to opt.php
     //start timer of 5 min 2";
+    
     header("Location: otp.php");
  }
 }
 else
  {
     //website is down for maintainance
+   
     header("Location: oops.php");
  }
 
 }
 else
  {
+   
     //rediricet to signin page
     header("Location: signin.php");
  }

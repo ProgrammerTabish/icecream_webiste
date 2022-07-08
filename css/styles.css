@@ -741,6 +741,7 @@ h2>i {
     margin-top: 30px;
     text-align: center;
     color: #833AB4;
+
 }
 
 #fb {
@@ -934,6 +935,15 @@ input[type=text]:onclick {
     font-family: 'Sofia', cursive;
 }
 
+#continue_button {
+    margin-top: 30px;
+    width: auto;
+    border-radius: 7px;
+    color: #e4007c;
+    font-size: 30px;
+
+}
+
 #myInput {
     display: inline-block;
     font-size: 20px;
@@ -1029,12 +1039,14 @@ input[type=text]:onclick {
 }
 
 #email_div {
-    border: 2px solid black;
-    border-radius: 12px;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding: 5%;
+
+
+    /* margin-left: 10%;
+    margin-right: 10%; */
+
     text-align: center;
+    color: #4285F4;
+
 }
 
 #faq {
@@ -1317,5 +1329,16 @@ input[type=text]:onclick {
 
 #signinid {
     padding: 29px;
+    text-align: center;
+}
+
+#maintenence {
+    display: inline;
+
+    margin-top: 20px;
+
+    width: 500px;
+    height: 500px;
+    margin-bottom: 12px;
     text-align: center;
 }

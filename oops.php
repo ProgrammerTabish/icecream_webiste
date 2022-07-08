@@ -20,7 +20,7 @@
        </h1>
 
       
- <img id="industry" src="vecotors/website-maintenance.svg" alt="" style="padding-top:150px">
+ <img id="maintenence" src="vecotors/maintenance.svg" alt="my image" />
 
      
         

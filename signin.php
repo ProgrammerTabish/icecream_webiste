@@ -26,10 +26,11 @@
        <div class="signin" id="note">
          
         <p><i id="errormsg">
-
+      
 
 <?php  
 session_start();
+
 
         try {
   echo $_SESSION["error_name"];

@@ -10,22 +10,22 @@
 <body>
 
 
-  
-   <div id="sucess_div"> 
+<div id="sucess_div"> 
     
        
        <h1 class="display-1 text-center alert-success" id="signinheading">
            Success!
            
        </h1>
- <img src="https://media4.giphy.com/media/YlSR3n9yZrxfgVzagm/200w.webp?cid=ecf05e47fdjfuszbnejdkx0z2kh5obtiad192hz4ya1h8go5&rid=200w.webp&ct=s">
-
+       
+ <img src="vecotors/check.gif">
      
         
-    
-          
+
     </div>
-    
+    <div class=signin>
+    <button class="navbuttons" id="continue_button" onclick="window.location.href = 'index.php';">continue ></button>
+</div>  
     <script src="index.js"> </script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

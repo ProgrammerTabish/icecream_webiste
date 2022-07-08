@@ -13,6 +13,8 @@
         <hr id="contactushr">
         <h1 class="display-1 text-center text-dark">Contact us
         </h1>
+        <h4 class="display-4 text-center text-primary" style="font-family:sofia;">Click on the icons to visit</h4>
+
 
 
     </div>

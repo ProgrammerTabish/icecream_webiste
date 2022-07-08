@@ -211,6 +211,22 @@ function reply_click(clicked_id) {
 let cart_element
 let cart_arr = [];
 let login = false;
+function login() {
+    login = true;
+
+}
+
+
+function isloged() {
+    if (login == true) {
+        alert("hi");
+        window.location.href = "cart.php";
+    }
+    else {
+        window.location.href = "signin.php";
+    }
+}
+
 function add_to_cart(cart_element) {
     if (login == true) {
         cart_arr.push(cart_element)

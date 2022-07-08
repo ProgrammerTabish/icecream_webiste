@@ -19,7 +19,7 @@
     </header> -->
 
     <?php include 'navbar.php'?>
-    <button  onclick="window.location.href = 'cart.html';" id="myBtn"><span class="material-symbols-outlined">
+    <button  onclick="window.location.href = 'cart.php';" id="myBtn"><span class="material-symbols-outlined">
         shopping_cart
         </span> <div class="cart_txt">cart</div> </button>
     <div class="productsdiv">
