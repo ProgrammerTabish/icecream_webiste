@@ -24,13 +24,11 @@
 </div>
  <div class="signin" style="color:red;"><i><?php 
  session_start();
- try{
+ if(isset($_SESSION["error_otp"])){
     echo $_SESSION["error_otp"];
-    $_SESSION["error_otp"]="";
+   
  }
- catch(Exception){
-
- }
+  $_SESSION["error_otp"]="";
  ?></i>
        
 </div>
@@ -38,7 +36,7 @@
         
         <form name="signinform" action="validate.php" method="POST">
             <label for="otp">An OTP was sent to your email by business@zayshicecream.com</label><br>
-            <input type="text" id="otp" name="otp" placeholder="Enter the OTP" minlength="6" maxlength="6" required><br><br>
+            <input type="text" id="otp" name="otp" placeholder="Enter the OTP" required><br><br>
             
             <input type="submit" id="submit" name="submit" class="navbuttons">
             

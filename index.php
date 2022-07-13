@@ -13,12 +13,16 @@
     <?php include 'header.php';
     include'navbar.php'?>
   
-    <button  id="myBtn" onClick = login()>
+    <button onClick=sign1() id="myBtn">
     <span class="material-symbols-outlined">
+   
             shopping_cart
         </span>
-        <div class="cart_txt">Cart</div>
+        <div class="cart_txt">Cart</div><?php if(isset($_SESSION["email"])){
+            echo "<span class='badge badge-pill badge-danger'>0</span>";
+        } ?>
     </button>
+
     <div class="home" id="homeid">
         <div id="quote">
             <h2 class="font-effect-neon webelive"><i>"We belive in consumer's satisfaction"</i></h2>
@@ -336,25 +340,17 @@
 
     <hr class="homehr">
 
-    <button id="see_all_products" onclick="window.location.href = 'product s.php';" class="navbuttons">
-        See all products>>>
+    
+    <div class="subheadings" id="footer"><button id="see_all_products" onclick="window.location.href = 'products.php'" class="navbuttons">
+        See all
     </button>
 
     </div>
 
 
-    <script src="index.js"></script>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-</body>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="index.js"></script>
+</body>         
 
 
 </html>
@@ -362,9 +358,12 @@
 
  if (isset($_SESSION['email'])) {
     $email=$_SESSION["email"];
-    
+    echo'
+    <script type="text/javascript">
+set_login_true();
+</script>';
   
-   echo $email;
+ 
    
 
 }

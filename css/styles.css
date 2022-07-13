@@ -936,11 +936,12 @@ input[type=text]:onclick {
 }
 
 #continue_button {
-    margin-top: 30px;
+    text-align: center;
     width: auto;
-    border-radius: 7px;
-    color: #e4007c;
-    font-size: 30px;
+    padding-top: 20px;
+    border-radius: 15px;
+    color: #E30B5C;
+    font-size: 20px;
 
 }
 
@@ -1019,23 +1020,17 @@ input[type=text]:onclick {
 
 
 #see_all_products {
-    font-size: 120%;
-    text-align: center;
-    margin-left: 35%;
-    position: absolute;
 
-    border: 1px solid;
 
-    padding: 5px 10px;
-    text-align: left;
-    text-decoration: none;
-    display: inline-block;
 
-    cursor: pointer;
-    border-radius: 20px;
     font-weight: bolder;
     font-family: 'Sofia', cursive;
-    color: #d4a752;
+    width: 50%;
+
+}
+
+#footer {
+    text-align: center;
 }
 
 #email_div {

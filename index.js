@@ -208,40 +208,223 @@ function reply_click(clicked_id) {
     console.log(clicked_id);
 }
 let login = false;
-function sign1() {
-    //     if (login == true) {
-    //         alert("hi");
-    //         window.location.href = "cart.php";
-    //     }
-    //     else {
-    //         window.location.href = "signin.php";
-    //     }
+function set_login_true() {
 
-    console.log("hi");
+    document.getElementById("button").innerHTML = "<image id='profile' src='images/profile.png'>";
+    document.getElementById("profile").style.borderRadius = "50%";
+    document.getElementById("profile").style.width = "30px";
+    document.getElementById("profile").style.height = "35px";
+    document.getElementById("button").style.border = "3px solid #236F21";
+
+
+    login = true;
+
+
+
+
+    document.getElementById("myBtn").style.backgroundColor = "green";
+
+
+
+
 }
-
-let cart_element
-let cart_arr = [];
-
+function set_login_true_p() {
+    login = true;
 
 
 
-function add_to_cart(cart_element) {
+
+    document.getElementById("myBtn").style.backgroundColor = "green";
+}
+function sign1() {
     if (login == true) {
-        cart_arr.push(cart_element)
-        console.log(cart_arr);
-        let i = 0;
-        for (i = 0; i < cart_arr.length; i++) {
-            // document.getElementById("cart_products").appendChild(cart_arr[i]);
-        }
-        console.log(document.getElementById("cart_products"))
 
+        window.location.href = "cart.php";
     }
     else {
+        window.location.href = "signin.php";
+    }
 
+
+}
+function check_login() {
+    if (login == true) {
+
+        window.location.href = "profile.php";
+    }
+    else {
+        window.location.href = "signin.php";
+    }
+
+
+}
+function cart_update(str) {
+    console.log(str);
+    $(document).ready(function () {
+        $.ajax({
+            type: "POST",
+            // contentType: "application/json; charset=utf-8",
+            url: "upload_cart.php",
+            data: { cart: str },
+        });
+    });
+}
+
+
+let s = '';
+
+function get_cart() {
+    $(document).ready(function () {
+        $.ajax({
+            type: "GET",
+            // contentType: "application/json; charset=utf-8",
+            url: "get_cart.php",
+            success: function (data) {
+                s = data;
+
+            }
+
+        });
+
+    });
+
+
+
+}
+
+
+
+let cart_id_arr = [];
+
+
+
+
+let cart_str;
+
+function add_element(product_id) {
+    cart_arr.push(product_id);
+
+    cart_str = '';
+    for (let i = 0; i < cart_arr.length; i++) {
+        cart_str.concat(product_id + ", ");
+
+    }
+
+
+    let s_str = [];
+    s_str.pop();
+    for (let i = 0; i < cart_arr.length; i++) {
+
+        s_str.push(cart_arr[i]);
+
+    }
+
+
+    console.log();
+    cart_update(s_str.join(' '));
+
+
+
+
+
+
+
+
+    console.log(cart_arr);
+
+}
+
+
+
+function update_divs(cart_array) {
+    let len_arr = cart_array.length;
+    for (i = 0; i < len_arr; i++) {
+
+        let n = document.getElementById(cart_array[i]).querySelectorAll(".navbuttons");
+        n[0].innerHTML = "remove";
+
+    }
+}
+function revert_divs(product_id) {
+
+
+    let n = document.getElementById(product_id).querySelectorAll(".navbuttons");
+    n[0].innerHTML = "Add to cart";
+
+
+}
+function remove_from_cart(product_id) {
+
+    revert_divs(product_id);
+    let index_arr = cart_arr.indexOf(product_id);
+    if (index_arr !== -1) {
+        cart_arr.splice(index_arr, 1);
+
+        let s_str = [];
+        s_str.pop();
+        for (let i = 0; i < cart_arr.length; i++) {
+
+            s_str.push(cart_arr[i]);
+
+        }
+        cart_update(s_str.join(' '));
+    }
+}
+
+get_cart();
+
+
+let cart_arr_str = [];
+function convert_cart_arr() {
+
+    get_cart();
+    console.log(s);
+    // cart_arr_str = s.split(" ");
+    // cart_arr = cart_arr_str;
+}
+cart_arr = [];
+
+
+
+
+
+
+function update_badge() {
+    let num = cart_arr.length
+    let n = document.querySelectorAll(".badge");
+    n[0].innerText = num;
+}
+function add_to_cart(cart_element) {
+    if (login == true) {
+
+
+        let product_id = cart_element.id
+        console.log(product_id);
+        if (cart_arr.indexOf(product_id) !== -1) {
+
+
+            remove_from_cart(product_id);
+            update_badge();
+        }
+        else {
+            add_element(product_id);
+            update_divs(cart_arr);
+            update_badge();
+        }
+    }
+    else {
         window.location.href = 'signin.php';
-
 
     }
 
 }
+
+
+
+
+
+
+
+
+
+

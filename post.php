@@ -122,6 +122,7 @@ session_start();
 $name=$_POST['name'];
 $email=$_POST['email'];
 $table_name="signin";
+$_SESSION["table"]=$table_name;
 if(form_validation($name,$email)==true)
 {
 $conn=connect_to_db();
@@ -133,18 +134,25 @@ if($conn!=false)
  if($is_available==true)
  {
    update_otp($table_name,$otp,$email,$conn);
-   $_SESSION["email"]=$email;
+   $_SESSION["email_u"]=$email;
    echo "/redirect to otp.php
    //start timer of 5 min 1";
+   $timestamp =  $_SERVER["REQUEST_TIME"]; 
+        $_SESSION['start_time'] = $timestamp; 
+    
    header("Location: otp.php");
  }
  else
  {
     insert_new_user($conn,$name,$email,$otp);
-    $_SESSION["email"]=$email;
+    $_SESSION["email_u"]=$email;
+   
    echo"
     //redirect to opt.php
-    //start timer of 5 min 2";
+    //start timer of 5 min";
+   
+     $timestamp =  $_SERVER["REQUEST_TIME"]; 
+        $_SESSION['start_time'] = $timestamp; 
     
     header("Location: otp.php");
  }
@@ -154,6 +162,8 @@ else
     //website is down for maintainance
    
     header("Location: oops.php");
+    session_unset();
+    session_destroy();
  }
 
 }
@@ -161,6 +171,8 @@ else
  {
    
     //rediricet to signin page
+    session_unset();
+    session_destroy();
     header("Location: signin.php");
  }
 
