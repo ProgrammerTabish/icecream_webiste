@@ -20,7 +20,7 @@ session_destroy();?>
 <div id="sucess_div"> 
     
        
-       <h1 class="display-1 text-center alert-warning" id="signinheading">
+       <h1 class="display-3 text-center alert-warning" id="signinheading">
            Logged Out!
            
        </h1>

@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
 
+
+
+
+
 header {
 
     position: relative;
@@ -19,7 +23,6 @@ header {
     animation-fill-mode: forwards; */
 
 }
-
 
 
 
@@ -171,12 +174,12 @@ header {
 
     font-size: 100%;
     text-align: center;
-
+    font-size: large;
     background-color: black;
     border: 2px solid white;
     color: white;
 
-    padding: 5px 10px;
+    padding: 10px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -209,30 +212,6 @@ header {
     border-radius: 5px;
 }
 
-.navbuttons:focus {
-    background-color: white;
-    color: black;
-    text-decoration: none;
-    border-color: white;
-    font-weight: bold;
-
-}
-
-
-/* #navbar {
-    overflow: hidden;
-    background-color: black;
-
-} */
-
-/* #navbar button {
-    float: none;
-    display: block-inline;
-
-    text-align: center;
-    padding: 5px;
-
-} */
 
 
 .content {
@@ -286,6 +265,7 @@ header {
 
 .subheadings {
     padding-left: 1.5em;
+    font-family: 'Sofia', cursive;
 
 }
 
@@ -295,6 +275,8 @@ header {
     color: lightgreen;
     box-shadow: 4px 3px 8px 1px;
     font-family: sofia;
+
+
 }
 
 #trending {
@@ -395,7 +377,7 @@ h2>i {
 .content {
     text-align: center;
     margin: 5px;
-    border: 2px solid black;
+    border: 0px black;
     border-radius: 20px 0px 20px 0px;
     font-size: 150%;
     display: inline-block;
@@ -419,25 +401,10 @@ h2>i {
 .content:hover {
     box-shadow: 4px 3px 8px 1px;
     border-radius: 50px;
-    border: 2px solid gray;
+    /* border: 2px solid gray; */
 
 }
 
-
-#anjeershake2 {
-    color: #A98691;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-
-    background-image: url('');
-}
-
-#anjeershake1 {
-    color: #A98691;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-image: url('');
-}
 
 #gulkhanicecream {
 
@@ -445,7 +412,7 @@ h2>i {
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
-    background-image: url('');
+    background-image: url(https://images.unsplash.com/photo-1569289555688-dcc8113f68ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHJvc2UlMjBtaWxrfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
 }
 
 #rajbhogkulfi {
@@ -453,273 +420,230 @@ h2>i {
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
-    background-image: url('');
+    background-image: url(https://images.unsplash.com/photo-1615885108069-7d5bef9a7e22?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2FmZnJvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
 }
 
 #mawakulfi {
     color: #EADDCA;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-image: url('');
+    background-image: url(https://images.unsplash.com/photo-1586985289071-36f62f55ce44?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWlsayUyMHNoYWtlJTIwaWNlY3JlYW18ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
 }
 
 #dryfruitkulfi {
     color: #583827;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-image: url('');
+    background-image: url(https://images.unsplash.com/photo-1621919472462-6db865a003e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fG51dHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
 }
 
 #vanillaicecream {
     color: #F3E5AB;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-image: url('');
+    background-image: url(https://images.unsplash.com/photo-1549395156-e0c1fe6fc7a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHZhbmlsbGElMjBpY2VjcmFtfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
 }
 
 #mangoicecream {
     color: #F4BB44;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-image: url('');
+    background-image: url(https://images.unsplash.com/photo-1524494904082-f4a0993b5ec0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWFuZ28lMjBpY2VjcmVhbXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
 }
 
 #badamshake {
     color: #EFDecd;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-image: url('');
+    background-image: url(https://images.unsplash.com/photo-1614410082354-7178f3bc2091?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGFsbW9uZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
 }
 
 #anjeershake {
 
+    color: #A98691;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-image: url('');
+    background-image: url(https://images.unsplash.com/photo-1633932850276-4382027c868a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8ZmlnfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
 }
 
 #lassi {
-
+    color: #E1AFB7;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-image: url('');
+    background-image: url(https://images.unsplash.com/photo-1581868164904-77b124b80242?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y3VyZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
 }
 
 #faludabasedrabdi {
     color: #f8e1ba;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-image: url('');
+    background-image: url(https://images.unsplash.com/photo-1592567165747-979beff86be6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fG1peCUyMGZydWl0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
 }
 
 #fruitsalad {
     color: #ec4d75;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-image: url('');
+    background-image: url(https://images.unsplash.com/photo-1519996529931-28324d5a630e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnJ1aXQlMjBzYWxhZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
 }
 
 #kajushake {
     color: #d4b797;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-image: url('');
+    background-image: url(https://images.unsplash.com/photo-1514906594387-3f184d228478?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2FzaGV3JTIwbnV0cyUyMG1pbGt8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
 }
 
 #fruitfaluda {
     color: #FAA0A0;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-image: url('');
+    background-image: url(https://images.unsplash.com/photo-1630823186728-b17c9f82a32d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZnJ1aXQlMjBmYWx1ZGF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
 }
 
 #rabdimalai {
     color: #cbd69e;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-image: url('');
+    background-image: url(https://images.unsplash.com/photo-1600788907416-456578634209?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWlsa3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
 }
 
 #americandryfruiticecream {
     color: #84563c;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-image: url('');
+    background-image: url(https://images.unsplash.com/photo-1598268121084-c8f7126e0cef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8aWNlY3JlYW18ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
 }
 
 #butterscotch {
     color: #f6e2b9;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-image: url('');
+    background-image: url(https://images.unsplash.com/photo-1549395156-e0c1fe6fc7a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aWNlY3JlYW18ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
 
 }
 
-#vanilla {
-    color: #F3E5AB;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-image: url('');
-}
 
-#mango {
-    color: #F4BB44;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-image: url('');
-}
+
 
 #chocolate {
     color: #7B3F00;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-image: url('');
+    background-image: url(https://images.unsplash.com/photo-1625758600922-4085dd859395?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aWNlY3JlYW18ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
 }
 
-#americandryfruit {
-    color: #5a3826;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-image: url('');
-}
 
 #rajbhog {
     color: #F4C430;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-image: url('');
+    background-image: url(https://images.unsplash.com/photo-1615885108069-7d5bef9a7e22?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2FmZnJvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
 }
 
 #blackcurrent {
-    color: #1B1811;
+    color: #7DF9FF;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-image: url('');
+    background-image: url(https://images.unsplash.com/photo-1505075232616-5aea40f97c63?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGJsdWUlMjBpY2VjcmVhbXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
 }
 
 #honeyfig {
     color: #EBA937;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-image: url('');
+    background-image: url(https://images.unsplash.com/photo-1545246909-b4e087f05214?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGhvbmV5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
 }
 
 #guava {
     color: #f5c4b1;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-image: url('');
+    background-image: url(https://images.unsplash.com/photo-1617076678955-2ab0aa77a3b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGd1YXZhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
 }
 
 #rasberry {
     color: #E30B5C;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-image: url('');
+    background-image: url(https://images.unsplash.com/photo-1627222295124-f8b3fc09e47f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGljZWNyZWFtfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
 }
 
 #blueberry {
     color: #4F86F7;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-image: url('');
+    background-image: url(https://images.unsplash.com/photo-1572190071169-49839515947b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGJsdWUlMjBiZXJyeXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
 }
 
 #strawberry {
     color: #fc5a8d;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-image: url('');
+    background-image: url(https://images.unsplash.com/photo-1586769412527-ab0855979b2e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aWNlY3JlYW18ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
 }
 
 #matkakulfi {
     color: #d97557;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-image: url('');
+    background-image: url(https://images.unsplash.com/photo-1603517428838-fea2e7dc0096?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZWFydGhlbndhcmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
 }
 
 #kulfi {
     color: #fffff0;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-image: url('');
 }
 
 #pistaslice {
     color: #93C572;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-image: url('');
+    background-image: url(https://images.unsplash.com/photo-1554630981-a73ffb5ed6f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGljZWNyZWFtfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
 }
 
 #badampistaslice {
     color: #b3d37f;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-image: url('');
+    background-image: url(https://images.unsplash.com/photo-1617033298107-1e6af0225003?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Z3JlZW4lMjBpY2VjcmVhbXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
 }
 
 #mangoslice {
     color: #F4BB44;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-image: url('');
+    background-image: url(https://images.unsplash.com/photo-1643813069855-7c9d8b6a8e66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bWFuZ28lMjBpY2VjcmVhbXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
 }
 
 #anjeerslice {
     color: #ad6881;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-image: url('');
+    background-image: url(https://images.unsplash.com/photo-1600980740347-53ce3f6f12c8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGZpZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
 }
 
 #rajbogslice {
     color: #F4C430;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-image: url('');
+    background-image: url(https://images.unsplash.com/photo-1615885108069-7d5bef9a7e22?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2FmZnJvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
 }
 
-#badamshakes {
-    color: #F4C430;
 
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-image: url('');
-}
 
-#kajushakes {
-    color: #d4b797;
 
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-image: url('');
-}
 
-#anjeershakes {
-    color: #b47b90;
-
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-image: url('');
-}
 
 #rabdis {
     color: #e9f3c1;
 
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-image: url('');
+    background-image: url(https://images.unsplash.com/photo-1592567165747-979beff86be6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fG1peCUyMGZydWl0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
 }
 
-#lassis {
-    color: #ffffff;
-
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-image: url('');
-}
 
 .contactuson {
     font-family: sofia;
@@ -788,6 +712,11 @@ h2>i {
     flex-wrap: wrap;
     justify-content: center;
 
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    background-image: url(https://images.unsplash.com/photo-1561998338-13ad7883b20f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHBhdHRlcm5zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+
 }
 
 #trendingdiv {
@@ -795,7 +724,7 @@ h2>i {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
+    background-image: url(https://images.unsplash.com/photo-1463428537233-c84b754b2c84?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHJlYXBlYXRpbmclMjBwYXR0ZXJufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60)
 }
 
 .alsotrythisdiv {
@@ -803,8 +732,7 @@ h2>i {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
-
+    background-image: url(https://images.unsplash.com/photo-1487266659293-c4762f375955?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHJlYXBlYXRpbmclMjBwYXR0ZXJufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60)
 }
 
 .commingsoondiv {
@@ -812,6 +740,8 @@ h2>i {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    background-image: url(https://images.unsplash.com/photo-1531685250784-7569952593d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2FsbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
 }
 
 .allalignment {
@@ -872,12 +802,12 @@ h2>i {
 input[type=text] {
     width: 100%;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 8px 0px;
     box-sizing: border-box;
-    border-radius: 2px;
+    border-radius: 0px;
     box-shadow: 0px;
 
-    transition: box-shadow 0.4s, border-radius 0.4s;
+    transition: box-shadow 0.4s, border, border-radius 0.4s;
 }
 
 input[type=button] {
@@ -907,41 +837,49 @@ input[type=checkbox] {
 
 input[type=text]:hover {
     border-radius: 14px;
+
     box-shadow: 4px 3px 8px 1px;
 }
 
-input[type=text]:onclick {
+/* input[type=text]:onclick {
     border-radius: 14px;
+    
     box-shadow: 4px 3px 8px 1px;
-}
+} */
 
 #myBtn {
 
     position: fixed;
-    bottom: 10px;
-    right: 20px;
-    z-index: 99;
+    bottom: 5px;
+    right: 10px;
+    z-index: 90;
     border: none;
     outline: none;
-    background-color: grey;
-    color: white;
+    background-color: transparent;
+    border: 0px solid;
+    /* box-shadow: 4px 4px 8px 1px; */
+    color: snow;
     cursor: pointer;
-    padding: 15px;
-    border-radius: 10px;
-    font-size: 18px;
+    padding: 12px;
+    border-radius: 16px;
+    font-size: 16px;
+
 }
+
+
 
 .cart_txt {
     font-family: 'Sofia', cursive;
 }
 
 #continue_button {
-    text-align: center;
+
+    margin-top: 20%;
     width: auto;
-    padding-top: 20px;
-    border-radius: 15px;
+
+    border-radius: 12px;
     color: #E30B5C;
-    font-size: 20px;
+    font-size: 150%;
 
 }
 
@@ -1083,10 +1021,11 @@ input[type=text]:onclick {
 
     font-family: 'Sofia', cursive;
     text-align: center;
-    padding: 12px;
+    padding: 15px;
     width: 90%;
     margin-left: 5%;
     font-size: large;
+
 }
 
 .ans_img {
@@ -1109,7 +1048,7 @@ input[type=text]:onclick {
 }
 
 #svg_twisted {
-    position: absolute;
+
     margin-left: 2%;
     transform: rotate(-30deg);
 
@@ -1120,8 +1059,8 @@ input[type=text]:onclick {
 
 #business_man {
     display: inline-block;
-    position: absolute;
-    margin-left: 50%;
+
+
 
     width: 150px;
     height: 300px;
@@ -1172,7 +1111,7 @@ input[type=text]:onclick {
 }
 
 #svg_mango {
-    position: absolute;
+
     margin-left: 12%;
     transform: rotate(30deg);
 
@@ -1189,7 +1128,7 @@ input[type=text]:onclick {
 }
 
 #confused {
-    position: absolute;
+
     margin-left: 80%;
 
 
@@ -1222,7 +1161,7 @@ input[type=text]:onclick {
 }
 
 #icecreams_buy {
-    position: absolute;
+
     margin-left: 12%;
     transform: rotate(30deg);
 
@@ -1313,6 +1252,7 @@ input[type=text]:onclick {
 
 #note {
     color: #ff3333;
+    text-align: center;
 }
 
 #sucess_div {
@@ -1336,4 +1276,177 @@ input[type=text]:onclick {
     height: 500px;
     margin-bottom: 12px;
     text-align: center;
+}
+
+#footer_div {
+    width: 100%;
+    height: auto;
+    border: 10px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: black;
+}
+
+#footer_block_1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#footer_block_2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#footer_block_3 {
+    text-align: center;
+}
+
+#brand_info_line {
+    margin-top: 50px;
+    font-family: 'Sofia', cursive;
+    color: white;
+    width: 300px;
+}
+
+#privacy_policy {
+    font-family: 'Sofia', cursive;
+    color: white;
+    width: 300px;
+    font-size: large;
+}
+
+.footer_helpline {
+    font-family: 'Sofia', cursive;
+    color: white;
+    width: 300px;
+
+}
+
+.helpline_hr {
+
+    width: 300px;
+    height: 1px;
+    background-color: #ccc;
+}
+
+#fssai_line {
+    width: 300px;
+    font-family: 'Sofia', cursive;
+}
+
+#fssai_number {
+    margin-top: 0;
+    margin-bottom: 50px;
+    width: 300px;
+    /* color: #e4007c; */
+    font-family: 'Courier Prime', monospace;
+    font-size: small;
+}
+
+#copyright {
+    font-family: 'Sofia', cursive;
+    color: white;
+    width: 300px;
+    margin-bottom: 50px;
+}
+
+.block_tnc_policy {
+    width: 60%;
+    text-align: left;
+
+}
+
+.privacy_block {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#change_name {
+    display: none;
+}
+
+#name_drop_down {
+    height: 75px;
+    text-align: center;
+
+}
+
+.product_photo {
+    height: 238px;
+    width: 159px;
+}
+
+#quantity_box {
+    width: 50px;
+    padding: 12px;
+    text-align: center;
+}
+
+input[type=number] {
+    width: 50px;
+    text-align: center;
+    font-size: large;
+    padding: 3px;
+    border: 2px solid;
+    border-radius: 5px;
+    margin: 12px;
+    -moz-appearance: textfield;
+    margin: 12px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+
+}
+
+.add_remove_button {
+
+    width: 49px;
+    border-radius: 7px;
+    text-align: center;
+}
+
+#cart_table {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.remove_btn_cart {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.checkout {
+    border-radius: 12px;
+
+    color: #90EE90;
+
+    border: 1px solid black;
+}
+
+.remove_button {
+    border-radius: 12px;
+    color: #ffa2a2;
+
+    border: 1px solid black;
+
+}
+
+#admin_btn {
+    width: 90%;
+    justify-content: right;
+
 }

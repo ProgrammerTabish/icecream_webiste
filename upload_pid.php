@@ -1,24 +1,23 @@
 <?php
-session_start();
-function connect_to_db()
+include 'arrays.php';
+include 'get_db_row.php';
+
+
+
+function update_cart($table_name, $val, $phone, $conn)
 {
-$server_name="localhost"; 
-$username="root";
-$password="";
-$dbname="signin";
-$sql=mysqli_connect($server_name,$username,$password,$dbname);
-return $sql;
+    $query = "UPDATE $table_name SET `pid` = '$val' WHERE `phone` = '$phone';";
+    mysqli_query($conn, $query);
 }
 
-function update_pid($table_name,$pid,$email,$conn)
-{
-$query="UPDATE $table_name SET `pid` = '$pid' WHERE `email` = '$email';";
-mysqli_query($conn,$query);
-}
-$pid=$_POST["pid"];
-$email=$_SESSION["email"];
-$table=$_SESSION["table"];
-$con=connect_to_db();
-update_pid($table,$pid,$email,$con);
+$final_str = $_POST["cart"];
 
-?>
+
+$phone = $_SESSION["phone"];
+$table = $_SESSION["table"];
+
+
+
+
+$con = connect_to_db();
+update_cart($table, $final_str, $phone, $con);

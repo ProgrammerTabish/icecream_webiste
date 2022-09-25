@@ -32,17 +32,24 @@
     <div class="subhead">
         <h3>Hi there!
 
-            </h2>
+            </h3>
             <br>
             <h3>
                 Welcome to "Zaysh Ice Cream"
             </h3>
     </div>
-    <img id="svg_twisted" src="vecotors/twistedicecream.svg" alt="my image" />
-    <div class="answer">
-        <h4>
+    
+
+
+
+
+<div class="privacy_block">
+
+<div class="answer content  ">
+        <img id="svg_twisted" src="vecotors/twistedicecream.svg" alt="my image" />
+        <h3>
             # About "Zaysh ice cream"
-        </h4>
+        </h3>
         <img class="ans_img" id="zayshlogo" src="images/logo.png" alt="img">
         <br>
         <br>
@@ -55,43 +62,40 @@
             <br>
             <b>Zaysh Ice Cream</b> <i>is a product of </i><b>Zak n Merc industries</b>
         </p>
+</div>
 
-
-
-    </div>
-
-    <div class="answer">
+ <div class="answer content">
 
         <img class="ans_img" src="images/photo.jpg" alt="img">
         <br>
-        <h4>
+        <h3>
             <b>~Mr Abdul Zakir</b><br><i>(Founder of Zaysh Ice Cream)</i>
-        </h4>
+        </h3>
+        <br>
 
-    </div>
-
-    <div class="answer">
-        <h4>
+<h3>
             # About Mr Abdul Zakir
-        </h4>
-        <br>
-        <br>
+        </h3>
+        
         <p>
             Mr Abdul Zakir is the founder and director at Zaysh Ice Cream and Zak n Merc industries.
             He has more than 23 years of manufacturing experience.
 
         </p>
-
-
-
-    </div>
-    <img id="business_man" src="vecotors/business_man.svg" alt="my image" />
+        <img id="business_man" src="vecotors/business_man.svg" alt="my image" />
     <img id="coworkers_svg" src="vecotors/coworkers.svg" alt="img" />
+    </div>
 
-    <div class="answer">
-        <h4>
+
+
+
+
+
+
+<div class="answer content">
+        <h3>
             # The Ice Cream jouney.
-        </h4>
+        </h3>
         <img id="story_svg" src="vecotors/icon-have-fun.svg" alt="">
         <br>
 
@@ -127,10 +131,14 @@
         <img class="ans_img" id="zaklogo" src="images/zak.jpg" alt="img">
     </div>
 
-    <div class="answer">
-        <h4>
+
+
+
+
+<div class="answer content">
+        <h3>
             # About Zak n Merc industries
-        </h4>
+        </h3>
         <img id="industry" src="vecotors/Anonymous_Architetto_--_Fabbrica.svg" alt="">
         <img id="industries" src="vecotors/store.svg" alt="my image" />
 
@@ -145,12 +153,15 @@
 
     </div>
 
-    <img id="svg_mango" src="vecotors/Icecream5.svg" alt="my image" />
-    <div class="answer">
-        <h4>
-            # About our products.
-        </h4>
 
+
+
+    
+<div class="answer content">
+        <h3>
+            # About our products.
+        </h3>
+ <img id="svg_mango" src="vecotors/Icecream5.svg" alt="my image" />
         <br>
         <br>
         <p>
@@ -162,11 +173,11 @@
 
 
     </div>
-    <img id="confused" src="vecotors/why.svg" alt="my image" />
-    <div class="answer">
-        <h4>
+    <div class="answer content">  
+        <img id="confused" src="vecotors/why.svg" alt="my image" />
+        <h3>
             #What makes us different??
-        </h4>
+        </h3>
         <img id="business_people" src="vecotors/business_people.svg" alt="my image" />
         <br>
         <br>
@@ -180,18 +191,19 @@
 
     </div>
 
-    <div class="answer">
-        <h4>
+
+ <div class="answer content">
+        <h3>
             #Who made this website?
-        </h4>
+        </h3>
 
         <br>
 
         <img class="ans_img" src="images/zakaphoto2.jpg" alt="img">
         <br>
-        <h4>
+        <h3>
             <b>~Mr Zaka Tabish</b><br><i>(Developer at Zak n Merc industries)</i>
-        </h4>
+        </h3>
         <p>
             This website was made by Shaikh Zaka Tabish.
         </p>
@@ -200,12 +212,11 @@
 
     </div>
 
-    <img id="icecreams_buy" src="vecotors/buy-bag.svg" alt="my image" />
-    <div class="answer">
-
-        <h4>
+   <div class="answer content">
+ <img id="icecreams_buy" src="vecotors/buy-bag.svg" alt="my image" />
+        <h3>
             #How to buy ice creams?
-        </h4>
+        </h3>
         <br>
         <h5>
             * IF your not a retailer then:
@@ -225,6 +236,99 @@
 
 
     </div>
+
+    <br>
+    <br>
+    <br>
+   
+    </div>
+
+   
+
+  
+<div id="footer_div">
+<div id="footer_block_1">
+
+<div id="logo_zacnmerc">
+     <img class="ans_img" id="zaklogo" src="images/zak.jpg" alt="img">
+
+</div>
+
+<div id="logo_zaysh">
+   <div id="brand_info_line">
+<p>
+    Zaysh Ice Cream is a product of Zak N Merc Industries
+    </p>
+</div>
+ <img class="ans_img" id="zayshlogo" src="images/logo.png" alt="img">
+</div>
+
+</div>
+
+
+
+<div id="footer_block_2">
+
+<div id="fassai">
+<img class="ans_img" id="zayshlogo" src="vecotors/fssai_logo.svg" alt="img">
+ <div id="fssai_number">
+<p>FSSAI license number:<br>
+    12451232125<br>
+    12451232125
+    </p>
+</div>
+  <!-- <div id="fssai_line">
+<p>
+   <i>The Food Safety and Standards Authority of India (FSSAI) has been established under Food Safety and Standards , 2006 which consolidates various acts & orders that have hitherto handled food related issues in various Ministries and Departments. FSSAI has been created for laying down science based standards for articles of food and to regulate their manufacture, storage, distribution, sale and import to ensure availability of safe and wholesome food for human consumption.
+   </i>  <b>(source: fssai.gov.in)</b>
+    </p>
+</div> -->
+
+</div>
+
+</div>
+
+
+
+
+<div id="footer_block_3">
+
+<div id="helpline">
+<hr class="helpline_hr">
+<p class="footer_helpline">Helpline Number :<b><a title="Click to copy" id="copy" href="javascript:copy_it('+91 9130080236');" >+91 9130080236</a></b></p>
+<button class="navbuttons" onclick="copy_it('+91 9130080236');">Click to copy the number</button>
+<hr class="helpline_hr">
+</div>
+<div id="whatsapp_floating">
+
+</div>
+<div id="privacy_policy">
+    <p>Kindly read our
+<a href="privacy_policy.php" class="privacy">privacy policy</a></p>
+
+</div>
+<br>
+<div id="copyright">
+<footer>&copy; Copyright 2022 Zaysh Ice Cream</footer>
+</div>
+
+
+</div>
+
+</div>
+    
+
+    
+
+   
+    
+  
+
+
+   
+
+   
+ 
 
 
 

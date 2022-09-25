@@ -42,8 +42,10 @@ window.onscroll = function () {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
         document.getElementById("navbar").style.top = "0";
+
     } else {
         document.getElementById("navbar").style.top = "-20%";
+
     }
     prevScrollpos = currentScrollPos;
 }
@@ -209,20 +211,21 @@ function reply_click(clicked_id) {
 }
 let login = false;
 function set_login_true() {
-
+    get_cart();
     document.getElementById("button").innerHTML = "<image id='profile' src='images/profile.png'>";
-    document.getElementById("profile").style.borderRadius = "50%";
-    document.getElementById("profile").style.width = "30px";
-    document.getElementById("profile").style.height = "35px";
-    document.getElementById("button").style.border = "3px solid #236F21";
-
-
+    document.getElementById("profile").style.borderRadius = "2px";
+    document.getElementById("profile").style.width = "23px";
+    document.getElementById("profile").style.height = "30px";
+    document.getElementById("button").style.border = "0px";
+    document.getElementById("button").style.boxShadow = "1px 1px 10px 5px";
     login = true;
 
 
 
 
     document.getElementById("myBtn").style.backgroundColor = "green";
+
+    // document.getElementById("myBtn").style.boxShadow = "2px 3px 9px 5px";
 
 
 
@@ -235,6 +238,7 @@ function set_login_true_p() {
 
 
     document.getElementById("myBtn").style.backgroundColor = "green";
+    // document.getElementById("myBtn").style.boxShadow = "4px 4px 8px 1px";
 }
 function sign1() {
     if (login == true) {
@@ -258,29 +262,36 @@ function check_login() {
 
 
 }
-function cart_update(str) {
-    console.log(str);
+function cart_update(strings, addr) {
+    // console.log(strings);
     $(document).ready(function () {
         $.ajax({
             type: "POST",
             // contentType: "application/json; charset=utf-8",
-            url: "upload_cart.php",
-            data: { cart: str },
+            url: addr,
+            data: { cart: strings },
         });
     });
 }
 
 
 let s = '';
-
+let call = 0;
+let cart_arr = [];
 function get_cart() {
     $(document).ready(function () {
         $.ajax({
             type: "GET",
-            // contentType: "application/json; charset=utf-8",
+
             url: "get_cart.php",
             success: function (data) {
-                s = data;
+
+
+                cart_arr = data.split(" ");
+                if (cart_arr[0] == "") {
+                    cart_arr.shift();
+                }
+
 
             }
 
@@ -288,13 +299,47 @@ function get_cart() {
 
     });
 
+    update_divs();
 
+    call = call + 1;
+
+}
+let pid_str;
+function get_pids() {
+    $(document).ready(function () {
+        $.ajax({
+            type: "GET",
+
+            url: "get_pid.php",
+            success: function (data) {
+
+
+                pid_str = data.split(" ");
+                console.log(pid_str);
+
+
+            }
+
+        });
+
+    });
+
+    update_divs();
+
+    call = call + 1;
 
 }
 
 
 
-let cart_id_arr = [];
+
+
+
+
+
+
+
+
 
 
 
@@ -321,7 +366,7 @@ function add_element(product_id) {
 
 
     console.log();
-    cart_update(s_str.join(' '));
+    cart_update(s_str.join(' '), "upload_cart.php");
 
 
 
@@ -330,20 +375,28 @@ function add_element(product_id) {
 
 
 
-    console.log(cart_arr);
 
 }
 
 
 
-function update_divs(cart_array) {
-    let len_arr = cart_array.length;
-    for (i = 0; i < len_arr; i++) {
+function update_divs() {
 
-        let n = document.getElementById(cart_array[i]).querySelectorAll(".navbuttons");
-        n[0].innerHTML = "remove";
+
+    let len_arr = cart_arr.length;
+    for (i = 0; i < len_arr; i++) {
+        try {
+            let n = document.getElementById(cart_arr[i]).querySelectorAll(".navbuttons");
+            n[0].innerHTML = "Remove";
+
+        }
+        catch
+        {
+
+        }
 
     }
+    update_badge();
 }
 function revert_divs(product_id) {
 
@@ -353,10 +406,24 @@ function revert_divs(product_id) {
 
 
 }
+
+
+
+
+
+
 function remove_from_cart(product_id) {
 
-    revert_divs(product_id);
+    let path = window.location.pathname;
+    let page = path.split("/").pop();
+    if (page != "cart.php") {
+
+        revert_divs(product_id);
+    }
+
+
     let index_arr = cart_arr.indexOf(product_id);
+
     if (index_arr !== -1) {
         cart_arr.splice(index_arr, 1);
 
@@ -367,48 +434,64 @@ function remove_from_cart(product_id) {
             s_str.push(cart_arr[i]);
 
         }
-        cart_update(s_str.join(' '));
+        cart_update(s_str.join(' '), "upload_cart.php");
     }
 }
-
-get_cart();
-
-
-let cart_arr_str = [];
-function convert_cart_arr() {
-
-    get_cart();
-    console.log(s);
-    // cart_arr_str = s.split(" ");
-    // cart_arr = cart_arr_str;
-}
-cart_arr = [];
-
 
 
 
 
 
 function update_badge() {
-    let num = cart_arr.length
-    let n = document.querySelectorAll(".badge");
-    n[0].innerText = num;
+    try {
+        let num = cart_arr.length
+        let n = document.querySelectorAll(".badge");
+        if (num > 0) {
+            n[0].innerText = num;
+            document.getElementById("myBtn").style.boxShadow = "1px 1px 10px 5px";
+        }
+        else {
+            n[0].innerText = "";
+
+            document.getElementById("myBtn").style.boxShadow = "0px 0px 0px 0px";
+        }
+
+    }
+    catch {
+
+    }
+
 }
+
+
+
+
+
+
+
+
+
+
+
 function add_to_cart(cart_element) {
     if (login == true) {
+
+        console.log(cart_element);
+
 
 
         let product_id = cart_element.id
         console.log(product_id);
         if (cart_arr.indexOf(product_id) !== -1) {
 
-
             remove_from_cart(product_id);
             update_badge();
+
         }
         else {
+
             add_element(product_id);
-            update_divs(cart_arr);
+            update_divs();
             update_badge();
         }
     }
@@ -421,10 +504,211 @@ function add_to_cart(cart_element) {
 
 
 
+function copy_it(text) {
+    navigator.clipboard.writeText(text);
+    alert("Copied the text: " + text);
+
+}
+
+function calculate_cost() {
+    let grand_ttl = 0;
+    for (i = 0; i < cart_arr.length; i++) {
+        let quantity = document.querySelectorAll("input")[i].value;
+        let price_string = document.getElementsByClassName("cost_str")[i].innerText;
+        let cost_cart = price_string.match(/\d+/)[0];
+        // console.log(quantity);
+        // console.log(cost_cart);
+        let ttl = quantity * cost_cart;
+
+        document.getElementsByClassName("ammount")[i].childNodes[1].innerHTML = ttl + "/-";
+        grand_ttl += ttl;
+
+
+
+    }
+    document.getElementById("total_ammount").innerText = grand_ttl + "/-";
+}
+
+
+let quantity_str = '';
+
+function create_qnt_str() {
+    quantity_str = '';
+    for (i = 0; i < cart_arr.length; i++) {
+        let id = document.querySelectorAll(".content")[i].id;
+        let qnt = document.querySelectorAll("input")[i].value;
+        quantity_str = quantity_str + " " + id + "-" + qnt;
+    }
+    quantity_str = quantity_str.trim();
+}
+
+
+
+function update_total() {
+
+    let char_package = "";
+    // console.log(counter.parentElement.parentElement.childNodes[1].childNodes[1].childNodes[7].childNodes[1].childNodes[1].value);
+    for (i = 0; i < cart_arr.length; i++) {
+
+        let quantity = document.querySelectorAll("input")[i].value;
+        char_package = char_package + " " + quantity;
+
+
+    }
+
+    char_package = char_package.substring(1);
+
+    cart_update(char_package, "upload_pid.php");
+    calculate_cost();
+}
 
 
 
 
 
+function upadte_stats() {
+    calculate_cost();
+    create_qnt_str();
+    update_total();
+    if (document.getElementById("total_ammount").innerText == "") {
+        update_status();
+
+    }
+}
 
 
+
+let outval;
+
+
+
+
+function increase(output) {
+
+    outval = output;
+    let cnti = parseInt(outval.childNodes[7].childNodes[1].childNodes[1].value);
+    if (cnti > 0) {
+        cnti++;
+        outval.childNodes[7].childNodes[1].childNodes[1].value = cnti;
+    }
+
+
+    update_total();
+    create_qnt_str();
+}
+function decrease(output) {
+    let cntd = parseInt(outval.childNodes[7].childNodes[1].childNodes[1].value);
+
+    outval = output;
+    if (cntd > 1) {
+        cntd--;
+
+        outval.childNodes[7].childNodes[1].childNodes[1].value = cntd;
+    }
+    update_total();
+    create_qnt_str();
+}
+
+function qnt_change(op) {
+    // console.log(op.parentElement.parentElement);
+    let ip_val = op.childNodes[1].value;
+
+    if (ip_val > 999) {
+
+        console.log(ip_val)
+        op.childNodes[1].value = 999;
+
+    }
+    if (ip_val < 1) {
+
+        console.log(ip_val)
+        op.childNodes[1].value = 1;
+
+    }
+    if (ip_val == "") {
+
+        console.log(ip_val)
+        op.childNodes[1].value = 1;
+
+    }
+    if (ip_val % 1 != 0) {
+
+        op.childNodes[1].value = Math.floor(ip_val);
+
+    }
+
+    if (ip_val !== ~~ip_val) {
+        op.childNodes[1].value = Math.trunc(ip_val);
+    }
+    if (ip_val == 0) {
+        op.childNodes[1].value = 1;
+        qnt_change(op);
+
+    }
+    if (ip_val[0] == ".") {
+        op.childNodes[1].value = 1;
+    }
+
+    update_total(op.parentElement.parentElement)
+}
+
+
+
+
+function remove_cart(key) {
+
+    let id_remove = key.parentElement.parentElement.childNodes[1].childNodes[3].id;
+    document.getElementById(id_remove).parentElement.parentElement.remove();
+    let length = document.querySelectorAll(".serial_number").length;
+
+    if (length == 0) {
+
+        console.log()
+        // document.childNodes[1].childNodes[2].childNodes[7].childNodes[3].remove();
+        // document.querySelectorAll("#prompt") = "No data!";
+
+    }
+    else {
+        for (i = 0; i < length; i++) {
+            document.querySelectorAll(".serial_number")[i].innerHTML = i + 1;
+        }
+
+    }
+
+
+    remove_from_cart(id_remove);
+    upadte_stats();
+
+
+
+}
+function dispaly_serial_number() {
+    let length = document.querySelectorAll(".serial_number").length;
+    for (i = 0; i < length; i++) {
+        document.querySelectorAll(".serial_number")[i].innerHTML = i + 1;
+    }
+
+}
+window.onload = function () { dispaly_serial_number(); };
+var path = window.location.pathname;
+var page = path.split("/").pop();
+if (page == "cart.php") {
+
+
+    setTimeout(function () { upadte_stats(); }, 1000);
+    setTimeout(function () { upadte_stats(); }, 2000);
+    setTimeout(function () { upadte_stats(); }, 3000);
+    setTimeout(function () { upadte_stats(); }, 4000);
+    setTimeout(function () { get_cart(); }, 1000);
+    setTimeout(function () { get_cart(); }, 2000);
+    setTimeout(function () { get_cart(); }, 3000);
+    setTimeout(function () { get_cart(); }, 4000);
+}
+
+if (page = "index.php" || page == "product.php");
+{
+    setTimeout(function () { get_cart(); }, 1000);
+    setTimeout(function () { get_cart(); }, 2000);
+    setTimeout(function () { get_cart(); }, 3000);
+    setTimeout(function () { get_cart(); }, 4000);
+}

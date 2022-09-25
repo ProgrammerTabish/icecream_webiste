@@ -1,26 +1,29 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <?php include 'metadata.php';
-    session_start();?>
+    session_start(); ?>
 </head>
 
-<body id="page">
+<body id="page" onload="get_cart()">
 
 
     <?php include 'header.php';
-    include'navbar.php'?>
-  
+    include 'navbar.php' ?>
+
     <button onClick=sign1() id="myBtn">
-    <span class="material-symbols-outlined">
-   
+        <div class="cart_txt"><?php if (isset($_SESSION["phone"])) {
+                                    echo "<span id='notify' class='badge badge-pill badge-danger'>";
+
+
+                                    echo "</span>";
+                                } ?></div>
+        <span class="material-symbols-outlined">
+
             shopping_cart
         </span>
-        <div class="cart_txt">Cart</div><?php if(isset($_SESSION["email"])){
-            echo "<span class='badge badge-pill badge-danger'>0</span>";
-        } ?>
+
     </button>
 
     <div class="home" id="homeid">
@@ -28,10 +31,10 @@
             <h2 class="font-effect-neon webelive"><i>"We belive in consumer's satisfaction"</i></h2>
             <p><b>
                     <div class="namepalate"> - Mr. Zakir </div>
-                </b><br><em>
-                    <div class="badge">(Founder of <b>ZAYSH Ice Cream</div></b><sup>TM</sup>)
-                </em></p>
+                </b></p>
         </div>
+
+
 
         <hr id="homehr">
 
@@ -56,20 +59,9 @@
 
 
     <div class="newproductsdiv">
-        <div id="anjeershake2" class="content  reveal">
-            <h3>Anjeer Shake</h3>
 
-            <div calss="discription">
-                <p>
-                    Anjeer shake is a thick blend of fig and milk
-                    along with dryfruits and ice.
-                </p>
 
-            </div>
-            <div class="rates">100₹ for 750ml.</div>
-            <button class="navbuttons anjeer_shake" onClick=add_to_cart(event.target.parentElement)>Add to cart</button>
-            <div class="reviews">⭐⭐⭐⭐4.0</div>
-        </div>
+
 
         <div id="gulkhanicecream" class="content  reveal">
             <h3>Rose (Gulkhan) IceCream</h3>
@@ -129,6 +121,7 @@
 
 
 
+
         <div id="mawakulfi" class="content  reveal">
             <h3>Mawa Kulfi</h3>
 
@@ -142,6 +135,15 @@
             <button class="navbuttons mawa_kulfi" onClick=add_to_cart(event.target.parentElement)>Add to cart</button>
             <div class="reviews">⭐⭐⭐⭐4.0</div>
         </div>
+
+
+
+
+
+
+
+
+
         <div id="dryfruitkulfi" class="content  reveal ">
             <h3>Dryfruit Kulfi</h3>
 
@@ -200,7 +202,7 @@
             <button class="navbuttons badam_shake" onClick=add_to_cart(event.target.parentElement)>Add to cart</button>
             <div class="reviews">⭐⭐⭐⭐4.0</div>
         </div>
-        <div id="anjeershake1" class="content  reveal">
+        <div id="anjeershake" class="content  reveal">
             <h3>Anjeer Shake</h3>
 
             <div calss="discription">
@@ -315,57 +317,104 @@
             <div class="reviews">⭐⭐⭐⭐4.0</div>
         </div>
     </div>
-    <div id="commingsoon">
-        <h2 class="subheadings">
-            Comming Soon
-        </h2>
-    </div>
-    <div class="commingsoondiv">
-        <div id="americandryfruiticecream" class="content  reveal">
-            <h3>American Dryfruit Icecream</h3>
 
-            <div calss="discription">
-                <p>
-                    Made with condensed milk chocolate and cashew nuts.
-                </p>
+
+
+
+
+    <!-- <div class="subheadings" id="footer"><button id="see_all_products" onclick="window.location.href = 'products.php'" class="navbuttons">
+         See all products
+    </button>
+
+    </div> -->
+    <div id="footer_div">
+        <div id="footer_block_1">
+
+            <div id="logo_zacnmerc">
+                <img class="ans_img" id="zaklogo" src="images/zak.jpg" alt="img">
+
             </div>
 
-            <div class="rates">100₹ for 750ml.</div>
-            <button class="navbuttons dryfruit_icecream" onClick=add_to_cart(event.target.parentElement)>Add to
-                cart</button>
-            <div class="reviews">⭐⭐⭐⭐4.0</div>
+            <div id="logo_zaysh">
+                <div id="brand_info_line">
+                    <p>
+                        Zaysh Ice Cream is a product of Zak N Merc Industries
+                    </p>
+                </div>
+                <img class="ans_img" id="zayshlogo" src="images/logo.png" alt="img">
+            </div>
+
+        </div>
+
+
+
+        <div id="footer_block_2">
+
+            <div id="fassai">
+                <img class="ans_img" id="zayshlogo" src="vecotors/fssai_logo.svg" alt="img">
+                <div id="fssai_number">
+                    <p>FSSAI license number:<br>
+                        12451232125<br>
+                        12451232125
+                    </p>
+                </div>
+                <div id="fssai_line">
+                    <p>
+                        <i>The Food Safety and Standards Authority of India (FSSAI) has been established under Food Safety and Standards , 2006 which consolidates various acts & orders that have hitherto handled food related issues in various Ministries and Departments. FSSAI has been created for laying down science based standards for articles of food and to regulate their manufacture, storage, distribution, sale and import to ensure availability of safe and wholesome food for human consumption.
+                        </i> <b>(source: fssai.gov.in)</b>
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+        <div id="footer_block_3">
+
+            <div id="helpline">
+                <hr class="helpline_hr">
+                <p class="footer_helpline">Helpline Number :<b><a title="Click to copy" id="copy" href="javascript:copy_it('+91 9130080236');">+91 9130080236</a></b></p>
+                <button class="navbuttons" onclick="copy_it('+91 9130080236');">Click to copy the number</button>
+                <hr class="helpline_hr">
+            </div>
+            <div id="whatsapp_floating">
+
+            </div>
+            <div id="privacy_policy">
+                <p>Kindly read our
+                    <a href="privacy_policy.php" class="privacy">privacy policy</a>
+                </p>
+
+            </div>
+            <br>
+            <div id="copyright">
+                <footer>&copy; Copyright 2022 Zaysh Ice Cream</footer>
+            </div>
+
+
         </div>
 
     </div>
 
-    <hr class="homehr">
-
-    
-    <div class="subheadings" id="footer"><button id="see_all_products" onclick="window.location.href = 'products.php'" class="navbuttons">
-        See all
-    </button>
-
-    </div>
 
 
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script type="text/javascript" src="index.js"></script>
-</body>         
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
 
 
 </html>
 <?php
 
- if (isset($_SESSION['email'])) {
-    $email=$_SESSION["email"];
-    echo'
+if (isset($_SESSION['phone'])) {
+    $phone = $_SESSION["phone"];
+    echo '
     <script type="text/javascript">
 set_login_true();
 </script>';
-  
- 
-   
-
 }
 
 

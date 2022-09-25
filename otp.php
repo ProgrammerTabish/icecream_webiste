@@ -35,7 +35,7 @@
        <div class="signin" id="signinid">
         
         <form name="signinform" action="validate.php" method="POST">
-            <label for="otp">An OTP was sent to your email by business@zayshicecream.com</label><br>
+            <label for="otp">An OTP was sent to your phone number by Zaysh IceCream.</label><br>
             <input type="text" id="otp" name="otp" placeholder="Enter the OTP" required><br><br>
             
             <input type="submit" id="submit" name="submit" class="navbuttons">
