@@ -1,3 +1,6 @@
+
+
+
 <html lang="en">
 
 <head>
@@ -66,9 +69,73 @@
 }
 
 </style>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 <script>
+
+
+
+function cart_update(strings, addr) {
+    // console.log(strings);
+    $(document).ready(function () {
+        $.ajax({
+            type: "POST",
+            // contentType: "application/json; charset=utf-8",
+            data: { cart: strings },
+            url: addr,
+        });
+    });
+}
+
+
+  
+
+      
+function collect_data()
+{
+  let str="";
+ let page = document.querySelectorAll("#select_page")
+ let len=page.length;
+ let i;
+ for(i=1;i<=len;i++)
+ {if(document.querySelectorAll("tr")[i].cells[4].childNodes[0].value  =="")
+     {
+      continue; 
+     }
+
+     else{
+       let part=document.querySelectorAll("tr")[i].cells[3].childNodes[2].value+"."+document.querySelectorAll("tr")[i].cells[4].childNodes[0].value;
+       let numb=document.querySelectorAll("tr")[i].cells[4].childNodes[0].value;
+         if(str.includes(part)==false)
+         {
+          str += document.querySelectorAll("tr")[i].cells[1].childNodes[0].textContent+"."+document.querySelectorAll("tr")[i].cells[3].childNodes[2].value+"."+document.querySelectorAll("tr")[i].cells[4].childNodes[0].value+","; 
+
+
+          document.querySelectorAll("tr")[i].cells[3].childNodes[0].innerText=" Done!";
+          document.querySelectorAll("tr")[i].cells[3].childNodes[0].style.color="Green";
+      
+         }
+         
+         else{
+          document.querySelectorAll("tr")[i].cells[3].childNodes[0].innerText=" Change the order!";
+          document.querySelectorAll("tr")[i].cells[3].childNodes[0].style.color="red";
+          continue;
+         }
+         
+     }
+ 
+      
+ }
+
+
+    if(str!="")
+     {
+      console.log(str);
+      cart_update(str, "new.php");
+     }
+}
+
+
 
     
 </script>
@@ -142,7 +209,7 @@ $priority= $row["priority"];
     <td>$priority</td>
     ";
     echo'
-    <td><label for="select_page">Chose a Page</label>
+    <td><label for="select_page">Choose a Page</label>
     
 <select id="select_page">
   <option value="A">Home Page</option>
@@ -158,7 +225,7 @@ $priority= $row["priority"];
 echo"</table>"
 ?>
 <div id="btn">
-<button id="submit">
+<button onclick="collect_data()" id="submit">
 Change!
 </button>
 </div>

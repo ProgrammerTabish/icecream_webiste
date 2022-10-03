@@ -74,9 +74,47 @@
 </style>
 
 
-<script>
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    
+<script>
+  function post_update(strings, addr) {
+    // console.log(strings);
+    $(document).ready(function () {
+        $.ajax({
+            type: "POST",
+            // contentType: "application/json; charset=utf-8",
+            data: { cart: strings },
+            url: addr,
+        });
+    });
+}
+
+
+  
+function create_str()
+{
+let str="";
+let len=document.querySelectorAll("tr").length;
+let i;
+for(i=1;i<len;i++)
+{
+let name=document.querySelectorAll("tr")[i].childNodes[3].innerText;
+let value=document.querySelectorAll("select")[i-1].value;
+
+if(value!="no_change") 
+{
+ str+=name+"-"+value+","
+}
+}
+
+if(str!="")
+     {
+      console.log(str);
+      post_update(str, "post_arrange.php");
+     }
+}
+   
 </script>
 
 
@@ -126,14 +164,12 @@ if($_SESSION["phone"] = $_SESSION["phone_u"])
 }}
 
 $conn=connect_to_db();
-$query="SELECT * FROM `sections`";
-$result=mysqli_query($conn, $query); 
-echo"<div class='cntr'>";
- while($row = $result->fetch_assoc()) {
-        echo "Name: ".$row["name"]."->>>".$row["priority"]. "<br>";
-    }
-    echo "</div>";
-// $conn=connect_to_db();
+$que="SELECT * FROM `sections`";
+$res=mysqli_query($conn, $que); 
+
+
+    
+
 $query="SELECT * FROM `products`";
 $result=mysqli_query($conn, $query); 
 
@@ -157,7 +193,17 @@ $priority= $row["section"];
     <td>$priority</td>
     ";
    
-   echo"<td><input type=text></td>
+   echo"<td><select class='val' name='change'>";
+echo"<option value='no_change'>No change!</option>";
+$res=mysqli_query($conn, $que);
+
+ while($row = $res->fetch_assoc()) {
+       $temp=$row["name"];
+      echo"<option value='$temp'>$temp</option>";
+    }
+ echo"<option value='0' style='color:red;'>Remove product!</option>";
+ echo "
+</select></td>
   </tr>";
 
    $counter++;
@@ -165,7 +211,7 @@ $priority= $row["section"];
 echo"</table>"
 ?>
 <div id="btn">
-<button id="submit">
+<button id="submit" onclick="create_str()">
 Change!
 </button>
 </div>

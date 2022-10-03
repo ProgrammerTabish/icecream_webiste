@@ -99,94 +99,54 @@
 
     </div>
     <div id="options">
-        <a href="">
-            <div style="background-color:#4E9F3D ;" class="dash_btn">
-                <h4 calss="btn_text">View Recent oreders</h4>
-            </div>
-        </a>
-
+     
         <a href="">
             <div style="background-color:#781C68;" class="dash_btn">
-                <h4 calss="btn_text">Check Orders</h4>
+                <p calss="btn_text">Check Orders</p>
             </div>
         </a>
         <a href="">
             <div style="background-color:#CBA0AE;" class="dash_btn">
-                <h4 calss="btn_text">Check Stocks</h4>
+                <p calss="btn_text">Check Stocks</p>
             </div>
         </a>
-        <a href="admin/add_product.php">
-            <div style="background-color:#9A86A4;" class="dash_btn">
-                <h4 calss="btn_text">Add a new Product</h4>
-            </div>
-        </a>
-        <a href="">
-            <div style="background-color:#5F7161;" class="dash_btn">
-                <h4 calss="btn_text">Remove a Product</h4>
-            </div>
-        </a>
-        <a href="">
-            <div style="background-color:#85586F;" class="dash_btn">
-                <h4 calss="btn_text">Update Stocks</h4>
-            </div>
-        </a>
-        <a href="">
-            <div style="background-color:#E38B29;" class="dash_btn">
-                <h4 calss="btn_text">Check Demands</h4>
-            </div>
-        </a>
-        <a href="">
-            <div style="background-color:#FFD8A9;" class="dash_btn">
-                <h4 calss="btn_text">Check supply chain</h4>
-            </div>
-        </a>
-        <a href="">
-            <div style="background-color:#8E3200;" class="dash_btn">
-                <h4 calss="btn_text">Check Deposits</h4>
-            </div>
-        </a>
-        <a href="">
+     
+   
+        
+      
+     
+        <a href="admin/add_employee.php">
             <div style="background-color:#570A57;" class="dash_btn">
-                <h4 calss="btn_text">Add employee</h4>
+                <p calss="btn_text">Add employee</p>
             </div>
         </a>
-        <a href="">
-            <div style="background-color:#7F8487;" class="dash_btn">
-                <h4 calss="btn_text">Remove employee</h4>
-            </div>
-        </a>
+      
 
-        <a href="">
+        <a href="admin/add_admin.php">
             <div style="background-color:green;" class="dash_btn">
-                <h4 calss="btn_text">Add new admin</h4>
+                <p calss="btn_text">Add admin</p>
             </div>
         </a>
 
-        <a href="">
-            <div style="background-color:#541212;" class="dash_btn">
-                <h4 calss="btn_text">Check Stats</h4>
-            </div>
-        </a>
-
-        <a href="">
-            <div style="background-color:#16003B;" class="dash_btn">
-                <h4 calss="btn_text">Edit Profile</h4>
+         <a href="admin/add_product.php">
+            <div style="background-color:#9A86A4;" class="dash_btn">
+                <p calss="btn_text">Add a new Product</p>
             </div>
         </a>
         <a href="admin/add_new_section.php">
             <div style="background-color:#712B75;" class="dash_btn">
-                <h4 calss="btn_text">Add a new section</h4>
+                <p calss="btn_text">Add a new section</p>
             </div>
         </a>
            <a href="admin/arrange_products.php">
             <div style="background-color:gold;" class="dash_btn">
-                <h4 calss="btn_text">Arrage Products</h4>
+                <p calss="btn_text">Arrage Products</p>
             </div>
         </a>
 
                 <a href="admin/arrange_section.php">
             <div style="background-color:orange;" class="dash_btn">
-                <h4 calss="btn_text">Arrange the sections</h4>
+                <p calss="btn_text">Arrange the sections</p>
             </div>
         </a>
     </div>
